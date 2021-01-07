@@ -1,6 +1,6 @@
 {
   "name": "vue-d3-network",
-  "version": "0.1.28",
+  "version": "0.1.29",
   "description": "Vue component to graph networks using d3-force",
   "main": "dist/vue-d3-network.umd.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/emiliorizzo/vue-d3-network"
+    "url": "https://github.com/GraphicNLP/vue-d3-network-custom"
   },
   "bugs": {
     "url": "https://github.com/emiliorizzo/vue-d3-network/issues"
