@@ -359,8 +359,10 @@ export default {
     },
     // -- Render helpers
     nodeClick (event, node) {
-      console.log('이벤트 체크')
       this.$emit('node-click', event, node)
+    },
+    nodeOver (event, node) {
+      this.$emit('node-over', event, node)
     },
     linkClick (event, link) {
       this.$emit('link-click', event, link)
