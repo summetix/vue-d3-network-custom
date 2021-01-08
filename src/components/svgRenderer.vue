@@ -11,75 +11,80 @@
     @touchstart.passive=''
     )
 
-    //-> links
-    g.links#l-links
-        path(v-for="link in links"
-          :d="linkPath(link)"
-          :id="link.id"
-          @click='emit("linkClick",[$event,link])'
-          @touchstart.passive='emit("linkClick",[$event,link])'
-          @mouseenter='emit("linkEnter",[$event,link])'
-          @mouseleave='emit("linkLeave",[$event,link])'
-          v-bind='linkAttrs(link)'
-          :class='linkClass(link.id)'
-          :style='linkStyle(link)'
-          )
+    g(:transform="transform")
+      //-> links
+      g.links#l-links
+          path(v-for="link in links"
+            :d="linkPath(link)"
+            :id="link.id"
+            @click='emit("linkClick",[$event,link])'
+            @touchstart.passive='emit("linkClick",[$event,link])'
+            @mouseenter='emit("linkEnter",[$event,link])'
+            @mouseleave='emit("linkLeave",[$event,link])'
+            v-bind='linkAttrs(link)'
+            :class='linkClass(link.id)'
+            :style='linkStyle(link)'
+            )
 
-    //- -> nodes
-    g.nodes#l-nodes(v-if='!noNodes')
-      template(v-for='(node,key) in nodes')
-        svg(v-if='svgIcon(node)'
+      //- -> nodes
+      g.nodes#l-nodes(v-if='!noNodes')
+        template(v-for='(node,key) in nodes')
+          svg(v-if='svgIcon(node)'
+            :key='key'
+            :viewBox='svgIcon(node).attrs.viewBox'
+            :width='getNodeSize(node, "width")'
+            :height='getNodeSize(node, "height")'
+            @click='emit("nodeClick",[$event,node])'
+            @mouseover='emit("nodeOver",[$event,node])'
+            @touchend.passive='emit("nodeClick",[$event,node])'
+            @mousedown.prevent='emit("dragStart",[$event,key])'
+            @touchstart.prevent='emit("dragStart",[$event,key])'
+            :x='node.x - getNodeSize(node, "width") / 2'
+            :y='node.y - getNodeSize(node, "height") / 2'
+            :style='nodeStyle(node)'
+            :title="node.name"
+            :class='nodeClass(node,["node-svg"])'
+            v-html='svgIcon(node).data'
+            v-bind='node._svgAttrs'
+            )
+
+          //- default circle nodes
+          circle(v-else
           :key='key'
-          :viewBox='svgIcon(node).attrs.viewBox'
-          :width='getNodeSize(node, "width")'
-          :height='getNodeSize(node, "height")'
+          :r="getNodeSize(node) / 2"
           @click='emit("nodeClick",[$event,node])'
-          @mouseover='emit("nodeOver",[$event,node])'
           @touchend.passive='emit("nodeClick",[$event,node])'
           @mousedown.prevent='emit("dragStart",[$event,key])'
           @touchstart.prevent='emit("dragStart",[$event,key])'
-          :x='node.x - getNodeSize(node, "width") / 2'
-          :y='node.y - getNodeSize(node, "height") / 2'
+          :cx="node.x"
+          :cy="node.y"
           :style='nodeStyle(node)'
           :title="node.name"
-          :class='nodeClass(node,["node-svg"])'
-          v-html='svgIcon(node).data'
+          :class="nodeClass(node)"
           v-bind='node._svgAttrs'
           )
 
-        //- default circle nodes
-        circle(v-else
-        :key='key'
-        :r="getNodeSize(node) / 2"
-        @click='emit("nodeClick",[$event,node])'
-        @touchend.passive='emit("nodeClick",[$event,node])'
-        @mousedown.prevent='emit("dragStart",[$event,key])'
-        @touchstart.prevent='emit("dragStart",[$event,key])'
-        :cx="node.x"
-        :cy="node.y"
-        :style='nodeStyle(node)'
-        :title="node.name"
-        :class="nodeClass(node)"
-        v-bind='node._svgAttrs'
-        )
+      //-> Links Labels
+      g.labels#link-labels(v-if='linkLabels')
+        text.link-label(v-for="link in links" :font-size="fontSize" )
+          textPath(v-bind:xlink:href="'#' + link.id" startOffset= "50%") {{ link.name }}
 
-    //-> Links Labels
-    g.labels#link-labels(v-if='linkLabels')
-      text.link-label(v-for="link in links" :font-size="fontSize" )
-        textPath(v-bind:xlink:href="'#' + link.id" startOffset= "50%") {{ link.name }}
-
-    //- -> Node Labels
-    g.labels#node-labels( v-if="nodeLabels")
-      text.node-label(v-for="node in nodes"
-        :x='node.x + (getNodeSize(node) / 2) + (fontSize / 2)'
-        :y='node.y + labelOffset.y'
-        :font-size="fontSize"
-        :class='(node._labelClass) ? node._labelClass : ""'
-        :stroke-width='fontSize / 8'
-      ) {{ node.name }}
+      //- -> Node Labels
+      g.labels#node-labels( v-if="nodeLabels")
+        text.node-label(v-for="node in nodes"
+          :x='node.x + (getNodeSize(node) / 2) + (fontSize / 2)'
+          :y='node.y + labelOffset.y'
+          :font-size="fontSize"
+          :class='(node._labelClass) ? node._labelClass : ""'
+          :stroke-width='fontSize / 8'
+        ) {{ node.name }}
 </template>
 <script>
 import svgExport from '../lib/js/svgExport.js'
+/*import * as select from 'd3-selection'
+import * as zoom from 'd3-zoom'
+const d3 = Object.assign({}, select, zoom)*/
+import * as d3 from 'd3'
 
 export default {
   name: 'svg-renderer',
@@ -108,6 +113,13 @@ export default {
       }
       return null
     }
+  },
+  mounted () {
+    var svg = d3.select("svg")
+    svg.call(d3.zoom().on("zoom", function (event, d) {
+              svg.attr("transform", event.transform)
+              console.log('zoom', event.target, this)
+    }))
   },
   methods: {
     getNodeSize (node, side) {
