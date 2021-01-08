@@ -4736,293 +4736,6 @@ var initialRadius = 10,
 
 
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"42b602fa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/svgRenderer.vue?vue&type=template&id=1362001c&lang=pug&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{ref:"svg",staticClass:"net-svg",attrs:{"xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink","width":_vm.size.w,"height":_vm.size.h},on:{"mouseup":function($event){_vm.emit("dragEnd",[$event])},"&touchend":function($event){_vm.emit("dragEnd",[$event])},"&touchstart":function($event){}}},[_c('g',{attrs:{"id":"container"}},[_c('g',{staticClass:"links",attrs:{"id":"l-links"}},_vm._l((_vm.links),function(link){return _c('path',_vm._b({class:_vm.linkClass(link.id),style:(_vm.linkStyle(link)),attrs:{"d":_vm.linkPath(link),"id":link.id},on:{"click":function($event){_vm.emit("linkClick",[$event,link])},"&touchstart":function($event){_vm.emit("linkClick",[$event,link])},"mouseenter":function($event){_vm.emit("linkEnter",[$event,link])},"mouseleave":function($event){_vm.emit("linkLeave",[$event,link])}}},'path',_vm.linkAttrs(link),false))})),(!_vm.noNodes)?_c('g',{staticClass:"nodes",attrs:{"id":"l-nodes"}},[_vm._l((_vm.nodes),function(node,key){return [(_vm.svgIcon(node))?_c('svg',_vm._b({key:key,class:_vm.nodeClass(node,["node-svg"]),style:(_vm.nodeStyle(node)),attrs:{"viewBox":_vm.svgIcon(node).attrs.viewBox,"width":_vm.getNodeSize(node, "width"),"height":_vm.getNodeSize(node, "height"),"x":node.x - _vm.getNodeSize(node, "width") / 2,"y":node.y - _vm.getNodeSize(node, "height") / 2,"title":node.name},domProps:{"innerHTML":_vm._s(_vm.svgIcon(node).data)},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"mouseover":function($event){_vm.emit("nodeOver",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'svg',node._svgAttrs,false)):_c('circle',_vm._b({key:key,class:_vm.nodeClass(node),style:(_vm.nodeStyle(node)),attrs:{"r":_vm.getNodeSize(node) / 2,"cx":node.x,"cy":node.y,"title":node.name},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'circle',node._svgAttrs,false))]})],2):_vm._e(),(_vm.linkLabels)?_c('g',{staticClass:"labels",attrs:{"id":"link-labels"}},_vm._l((_vm.links),function(link){return _c('text',{staticClass:"link-label",attrs:{"font-size":_vm.fontSize}},[_c('textPath',{attrs:{"xlink:href":'#' + link.id,"startOffset":"50%"}},[_vm._v(_vm._s(link.name))])])})):_vm._e(),(_vm.nodeLabels)?_c('g',{staticClass:"labels",attrs:{"id":"node-labels"}},_vm._l((_vm.nodes),function(node){return _c('text',{staticClass:"node-label",class:(node._labelClass) ? node._labelClass : "",attrs:{"x":node.x + (_vm.getNodeSize(node) / 2) + (_vm.fontSize / 2),"y":node.y + _vm.labelOffset.y,"font-size":_vm.fontSize,"stroke-width":_vm.fontSize / 8}},[_vm._v(_vm._s(node.name))])})):_vm._e()])])}
-var staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./src/components/svgRenderer.vue?vue&type=template&id=1362001c&lang=pug&
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.regexp.replace.js
-var es6_regexp_replace = __webpack_require__("a481");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.regexp.split.js
-var es6_regexp_split = __webpack_require__("28a5");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom.iterable.js
-var web_dom_iterable = __webpack_require__("ac6a");
-
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/typeof.js
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es7.symbol.async-iterator.js
-var es7_symbol_async_iterator = __webpack_require__("ac4d");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.symbol.js
-var es6_symbol = __webpack_require__("8a81");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.array.iterator.js
-var es6_array_iterator = __webpack_require__("cadf");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es7.object.values.js
-var es7_object_values = __webpack_require__("8615");
-
-// CONCATENATED MODULE: ./src/lib/js/svgExport.js
-
-
-
-
-
-
-
-/* harmony default export */ var svgExport = ({
-  NS: 'http://www.w3.org/2000/svg',
-  // svgOrg: svg element
-  // allCss : true includes all svg css styles, false includes only matched styles
-  export: function _export(svgOrg, allCss) {
-    var svg = null;
-
-    if (this.isSvgData(svgOrg)) {
-      svg = svgOrg.cloneNode(true);
-      var childs = svgOrg.parentNode.querySelectorAll('*');
-      var cssStyle = {};
-      var rules = this.getcssRules();
-      var _iteratorNormalCompletion = true;
-      var _didIteratorError = false;
-      var _iteratorError = undefined;
-
-      try {
-        var _loop = function _loop() {
-          var child = _step.value;
-          var elRules = rules;
-
-          if (!allCss) {
-            elRules = rules.filter(function (rule) {
-              return child.matches(rule.selectorText);
-            });
-          }
-
-          var _iteratorNormalCompletion2 = true;
-          var _didIteratorError2 = false;
-          var _iteratorError2 = undefined;
-
-          try {
-            for (var _iterator2 = elRules[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-              var rule = _step2.value;
-              cssStyle[rule.selectorText] = rule.cssText;
-            }
-          } catch (err) {
-            _didIteratorError2 = true;
-            _iteratorError2 = err;
-          } finally {
-            try {
-              if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
-                _iterator2.return();
-              }
-            } finally {
-              if (_didIteratorError2) {
-                throw _iteratorError2;
-              }
-            }
-          }
-        };
-
-        for (var _iterator = childs[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-          _loop();
-        }
-      } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-      } finally {
-        try {
-          if (!_iteratorNormalCompletion && _iterator.return != null) {
-            _iterator.return();
-          }
-        } finally {
-          if (_didIteratorError) {
-            throw _iteratorError;
-          }
-        }
-      }
-
-      var css = Object.values(cssStyle).join('\n');
-
-      if (css) {
-        var style = document.createElementNS(this.NS, 'style');
-        style.type = 'text/css';
-        svg.insertBefore(style, svg.childNodes[0]);
-        style.innerHTML = css;
-        svg.appendChild(style);
-      }
-    }
-
-    return svg;
-  },
-  makeCanvas: function makeCanvas(width, height, background) {
-    var canvas = document.createElement('canvas');
-    canvas.width = width;
-    canvas.height = height;
-    var ctx = canvas.getContext('2d');
-    ctx.fillStyle = background || 'white';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    return canvas;
-  },
-  serialize: function serialize(svg) {
-    return new XMLSerializer().serializeToString(svg);
-  },
-  svgToImg: function svgToImg(svg, canvas, cb) {
-    var xml = this.serialize(svg);
-    var img = new Image();
-    var ctx = canvas.getContext('2d');
-
-    img.onload = function () {
-      ctx.drawImage(this, 0, 0);
-      var png = canvas.toDataURL('image/png');
-      cb(null, png, ctx);
-    };
-
-    img.onerror = function (err) {
-      cb(err);
-    };
-
-    img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(xml)));
-  },
-  save: function save(svg) {
-    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(this.serialize(svg));
-  },
-  getcssRules: function getcssRules() {
-    var rules = [];
-    var _iteratorNormalCompletion3 = true;
-    var _didIteratorError3 = false;
-    var _iteratorError3 = undefined;
-
-    try {
-      for (var _iterator3 = document.styleSheets[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-        var styles = _step3.value;
-        var styleRules = this.readRules(styles);
-        var _iteratorNormalCompletion4 = true;
-        var _didIteratorError4 = false;
-        var _iteratorError4 = undefined;
-
-        try {
-          for (var _iterator4 = styleRules[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-            var rule = _step4.value;
-
-            if (rule && rule.cssText) {
-              rules.push(rule);
-            }
-          }
-        } catch (err) {
-          _didIteratorError4 = true;
-          _iteratorError4 = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion4 && _iterator4.return != null) {
-              _iterator4.return();
-            }
-          } finally {
-            if (_didIteratorError4) {
-              throw _iteratorError4;
-            }
-          }
-        }
-      }
-    } catch (err) {
-      _didIteratorError3 = true;
-      _iteratorError3 = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion3 && _iterator3.return != null) {
-          _iterator3.return();
-        }
-      } finally {
-        if (_didIteratorError3) {
-          throw _iteratorError3;
-        }
-      }
-    }
-
-    return rules;
-  },
-  readRules: function readRules(styles) {
-    try {
-      if (!styles.cssRules) return styles.rules || [];
-    } catch (e) {
-      // Firefox returns Security Error if stylesheet originates from different domain
-      if (e.name !== 'SecurityError') throw e;
-      return [];
-    }
-
-    return styles.cssRules;
-  },
-  toDom: function toDom(svgData) {
-    var div = document.createElement('div');
-    div.innerHTML = svgData;
-    return div.firstChild || null;
-  },
-  toObject: function toObject(svg) {
-    if (svg) {
-      var attrs = {};
-
-      if (svg.attributes) {
-        for (var i = svg.attributes.length; i >= 0; i--) {
-          var a = svg.attributes[i];
-          if (a) attrs[a.name] = a.value;
-        }
-      }
-
-      var data = svg.innerHTML;
-      if (data) return {
-        attrs: attrs,
-        data: data
-      };
-    }
-
-    return null;
-  },
-  svgElFromString: function svgElFromString(svgData) {
-    var svgEl = this.toDom(svgData);
-    if (!this.isSvgData(svgEl)) return;
-    svgEl.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    return svgEl;
-  },
-  svgDataToUrl: function svgDataToUrl(svgData, attrs) {
-    if (_typeof(attrs) === 'object') {
-      for (var a in attrs) {
-        var attribute = attrs[a] ? attrs[a] : '';
-        svgData.setAttribute(a, attribute);
-      }
-    }
-
-    var svg = this.export(svgData);
-    if (svg) return this.svgToUrl(this.serialize(svg));
-    return null;
-  },
-  isSvgData: function isSvgData(svgData) {
-    if (!svgData.firstChild) return false;
-    return svgData.firstChild.parentNode.nodeName === 'svg';
-  },
-  svgToUrl: function svgToUrl(svg) {
-    var xml = new Blob([svg], {
-      type: 'image/svg+xml'
-    });
-    var url = URL.createObjectURL(xml);
-    return url;
-  }
-});
 // CONCATENATED MODULE: ./node_modules/d3-selection/src/namespaces.js
 var xhtml = "http://www.w3.org/1999/xhtml";
 
@@ -8529,6 +8242,293 @@ function defaultConstrain(transform, extent, translateExtent) {
 
 
 
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"42b602fa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/svgRenderer.vue?vue&type=template&id=1362001c&lang=pug&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{ref:"svg",staticClass:"net-svg",attrs:{"xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink","width":_vm.size.w,"height":_vm.size.h},on:{"mouseup":function($event){_vm.emit("dragEnd",[$event])},"&touchend":function($event){_vm.emit("dragEnd",[$event])},"&touchstart":function($event){}}},[_c('g',{attrs:{"id":"container"}},[_c('g',{staticClass:"links",attrs:{"id":"l-links"}},_vm._l((_vm.links),function(link){return _c('path',_vm._b({class:_vm.linkClass(link.id),style:(_vm.linkStyle(link)),attrs:{"d":_vm.linkPath(link),"id":link.id},on:{"click":function($event){_vm.emit("linkClick",[$event,link])},"&touchstart":function($event){_vm.emit("linkClick",[$event,link])},"mouseenter":function($event){_vm.emit("linkEnter",[$event,link])},"mouseleave":function($event){_vm.emit("linkLeave",[$event,link])}}},'path',_vm.linkAttrs(link),false))})),(!_vm.noNodes)?_c('g',{staticClass:"nodes",attrs:{"id":"l-nodes"}},[_vm._l((_vm.nodes),function(node,key){return [(_vm.svgIcon(node))?_c('svg',_vm._b({key:key,class:_vm.nodeClass(node,["node-svg"]),style:(_vm.nodeStyle(node)),attrs:{"viewBox":_vm.svgIcon(node).attrs.viewBox,"width":_vm.getNodeSize(node, "width"),"height":_vm.getNodeSize(node, "height"),"x":node.x - _vm.getNodeSize(node, "width") / 2,"y":node.y - _vm.getNodeSize(node, "height") / 2,"title":node.name},domProps:{"innerHTML":_vm._s(_vm.svgIcon(node).data)},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"mouseover":function($event){_vm.emit("nodeOver",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'svg',node._svgAttrs,false)):_c('circle',_vm._b({key:key,class:_vm.nodeClass(node),style:(_vm.nodeStyle(node)),attrs:{"r":_vm.getNodeSize(node) / 2,"cx":node.x,"cy":node.y,"title":node.name},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'circle',node._svgAttrs,false))]})],2):_vm._e(),(_vm.linkLabels)?_c('g',{staticClass:"labels",attrs:{"id":"link-labels"}},_vm._l((_vm.links),function(link){return _c('text',{staticClass:"link-label",attrs:{"font-size":_vm.fontSize}},[_c('textPath',{attrs:{"xlink:href":'#' + link.id,"startOffset":"50%"}},[_vm._v(_vm._s(link.name))])])})):_vm._e(),(_vm.nodeLabels)?_c('g',{staticClass:"labels",attrs:{"id":"node-labels"}},_vm._l((_vm.nodes),function(node){return _c('text',{staticClass:"node-label",class:(node._labelClass) ? node._labelClass : "",attrs:{"x":node.x + (_vm.getNodeSize(node) / 2) + (_vm.fontSize / 2),"y":node.y + _vm.labelOffset.y,"font-size":_vm.fontSize,"stroke-width":_vm.fontSize / 8}},[_vm._v(_vm._s(node.name))])})):_vm._e()])])}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/svgRenderer.vue?vue&type=template&id=1362001c&lang=pug&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.regexp.replace.js
+var es6_regexp_replace = __webpack_require__("a481");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.regexp.split.js
+var es6_regexp_split = __webpack_require__("28a5");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom.iterable.js
+var web_dom_iterable = __webpack_require__("ac6a");
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/typeof.js
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es7.symbol.async-iterator.js
+var es7_symbol_async_iterator = __webpack_require__("ac4d");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.symbol.js
+var es6_symbol = __webpack_require__("8a81");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.array.iterator.js
+var es6_array_iterator = __webpack_require__("cadf");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es7.object.values.js
+var es7_object_values = __webpack_require__("8615");
+
+// CONCATENATED MODULE: ./src/lib/js/svgExport.js
+
+
+
+
+
+
+
+/* harmony default export */ var svgExport = ({
+  NS: 'http://www.w3.org/2000/svg',
+  // svgOrg: svg element
+  // allCss : true includes all svg css styles, false includes only matched styles
+  export: function _export(svgOrg, allCss) {
+    var svg = null;
+
+    if (this.isSvgData(svgOrg)) {
+      svg = svgOrg.cloneNode(true);
+      var childs = svgOrg.parentNode.querySelectorAll('*');
+      var cssStyle = {};
+      var rules = this.getcssRules();
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        var _loop = function _loop() {
+          var child = _step.value;
+          var elRules = rules;
+
+          if (!allCss) {
+            elRules = rules.filter(function (rule) {
+              return child.matches(rule.selectorText);
+            });
+          }
+
+          var _iteratorNormalCompletion2 = true;
+          var _didIteratorError2 = false;
+          var _iteratorError2 = undefined;
+
+          try {
+            for (var _iterator2 = elRules[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+              var rule = _step2.value;
+              cssStyle[rule.selectorText] = rule.cssText;
+            }
+          } catch (err) {
+            _didIteratorError2 = true;
+            _iteratorError2 = err;
+          } finally {
+            try {
+              if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
+                _iterator2.return();
+              }
+            } finally {
+              if (_didIteratorError2) {
+                throw _iteratorError2;
+              }
+            }
+          }
+        };
+
+        for (var _iterator = childs[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          _loop();
+        }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return != null) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
+
+      var css = Object.values(cssStyle).join('\n');
+
+      if (css) {
+        var style = document.createElementNS(this.NS, 'style');
+        style.type = 'text/css';
+        svg.insertBefore(style, svg.childNodes[0]);
+        style.innerHTML = css;
+        svg.appendChild(style);
+      }
+    }
+
+    return svg;
+  },
+  makeCanvas: function makeCanvas(width, height, background) {
+    var canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = background || 'white';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    return canvas;
+  },
+  serialize: function serialize(svg) {
+    return new XMLSerializer().serializeToString(svg);
+  },
+  svgToImg: function svgToImg(svg, canvas, cb) {
+    var xml = this.serialize(svg);
+    var img = new Image();
+    var ctx = canvas.getContext('2d');
+
+    img.onload = function () {
+      ctx.drawImage(this, 0, 0);
+      var png = canvas.toDataURL('image/png');
+      cb(null, png, ctx);
+    };
+
+    img.onerror = function (err) {
+      cb(err);
+    };
+
+    img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(xml)));
+  },
+  save: function save(svg) {
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(this.serialize(svg));
+  },
+  getcssRules: function getcssRules() {
+    var rules = [];
+    var _iteratorNormalCompletion3 = true;
+    var _didIteratorError3 = false;
+    var _iteratorError3 = undefined;
+
+    try {
+      for (var _iterator3 = document.styleSheets[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+        var styles = _step3.value;
+        var styleRules = this.readRules(styles);
+        var _iteratorNormalCompletion4 = true;
+        var _didIteratorError4 = false;
+        var _iteratorError4 = undefined;
+
+        try {
+          for (var _iterator4 = styleRules[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+            var rule = _step4.value;
+
+            if (rule && rule.cssText) {
+              rules.push(rule);
+            }
+          }
+        } catch (err) {
+          _didIteratorError4 = true;
+          _iteratorError4 = err;
+        } finally {
+          try {
+            if (!_iteratorNormalCompletion4 && _iterator4.return != null) {
+              _iterator4.return();
+            }
+          } finally {
+            if (_didIteratorError4) {
+              throw _iteratorError4;
+            }
+          }
+        }
+      }
+    } catch (err) {
+      _didIteratorError3 = true;
+      _iteratorError3 = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion3 && _iterator3.return != null) {
+          _iterator3.return();
+        }
+      } finally {
+        if (_didIteratorError3) {
+          throw _iteratorError3;
+        }
+      }
+    }
+
+    return rules;
+  },
+  readRules: function readRules(styles) {
+    try {
+      if (!styles.cssRules) return styles.rules || [];
+    } catch (e) {
+      // Firefox returns Security Error if stylesheet originates from different domain
+      if (e.name !== 'SecurityError') throw e;
+      return [];
+    }
+
+    return styles.cssRules;
+  },
+  toDom: function toDom(svgData) {
+    var div = document.createElement('div');
+    div.innerHTML = svgData;
+    return div.firstChild || null;
+  },
+  toObject: function toObject(svg) {
+    if (svg) {
+      var attrs = {};
+
+      if (svg.attributes) {
+        for (var i = svg.attributes.length; i >= 0; i--) {
+          var a = svg.attributes[i];
+          if (a) attrs[a.name] = a.value;
+        }
+      }
+
+      var data = svg.innerHTML;
+      if (data) return {
+        attrs: attrs,
+        data: data
+      };
+    }
+
+    return null;
+  },
+  svgElFromString: function svgElFromString(svgData) {
+    var svgEl = this.toDom(svgData);
+    if (!this.isSvgData(svgEl)) return;
+    svgEl.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    return svgEl;
+  },
+  svgDataToUrl: function svgDataToUrl(svgData, attrs) {
+    if (_typeof(attrs) === 'object') {
+      for (var a in attrs) {
+        var attribute = attrs[a] ? attrs[a] : '';
+        svgData.setAttribute(a, attribute);
+      }
+    }
+
+    var svg = this.export(svgData);
+    if (svg) return this.svgToUrl(this.serialize(svg));
+    return null;
+  },
+  isSvgData: function isSvgData(svgData) {
+    if (!svgData.firstChild) return false;
+    return svgData.firstChild.parentNode.nodeName === 'svg';
+  },
+  svgToUrl: function svgToUrl(svg) {
+    var xml = new Blob([svg], {
+      type: 'image/svg+xml'
+    });
+    var url = URL.createObjectURL(xml);
+    return url;
+  }
+});
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/svgRenderer.vue?vue&type=script&lang=js&
 
 
@@ -9635,7 +9635,9 @@ var es6_typed_uint8_array = __webpack_require__("34ef");
 
 
 
-var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namespaceObject);
+
+
+var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namespaceObject, src_namespaceObject, d3_zoom_src_namespaceObject);
 /* harmony default export */ var vue_d3_networkvue_type_script_lang_js_ = ({
   name: 'd3-network',
   components: {

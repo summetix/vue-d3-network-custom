@@ -1,10 +1,12 @@
 <script>
 import * as forceSimulation from 'd3-force'
+import * as select from "d3-selection"
+import * as zoom from "d3-zoom"
 import svgRenderer from './components/svgRenderer.vue'
 import canvasRenderer from './components/canvasRenderer.vue'
 import saveImage from './lib/js/saveImage.js'
 import svgExport from './lib/js/svgExport.js'
-const d3 = Object.assign({}, forceSimulation)
+const d3 = Object.assign({}, forceSimulation, select, zoom)
 
 export default {
   name: 'd3-network',
