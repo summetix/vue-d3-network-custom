@@ -1,5 +1,5 @@
 {
-  "name": "vue-d3-network",
+  "name": "vue-d3-network-custom",
   "version": "0.1.29",
   "description": "Vue component to graph networks using d3-force",
   "main": "dist/vue-d3-network.umd.js",
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
+    "@vue/cli-service": "^3.12.1",
     "@vue/eslint-config-standard": "^3.0.0-rc.5",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
