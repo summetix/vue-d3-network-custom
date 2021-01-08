@@ -1,7 +1,7 @@
 <script>
 import * as forceSimulation from 'd3-force'
-import * as select from "d3-selection"
-import * as zoom from "d3-zoom"
+import * as select from 'd3-selection'
+import * as zoom from 'd3-zoom'
 import svgRenderer from './components/svgRenderer.vue'
 import canvasRenderer from './components/canvasRenderer.vue'
 import saveImage from './lib/js/saveImage.js'
@@ -196,7 +196,7 @@ export default {
   },
   methods: {
     zoom () {
-      var svg = d3.select('svg')
+      var svg = d3.select('.net-svg')
       var g = svg.selectAll('g')
       let transform
       const zoom = d3.zoom().on('zoom', function (event, d) {

@@ -9825,7 +9825,7 @@ var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namesp
   },
   methods: {
     zoom: function zoom() {
-      var svg = vue_d3_networkvue_type_script_lang_js_d3.select('svg');
+      var svg = vue_d3_networkvue_type_script_lang_js_d3.select('.net-svg');
       var g = svg.selectAll('g');
       var transform;
       var zoom = vue_d3_networkvue_type_script_lang_js_d3.zoom().on('zoom', function (event, d) {
