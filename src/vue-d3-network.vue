@@ -140,6 +140,7 @@ export default {
     this.updateNodeSvg()
   },
   mounted () {
+    this.zoom()
     this.onResize()
     this.$nextTick(() => {
       this.animate()
@@ -192,6 +193,15 @@ export default {
     }
   },
   methods: {
+    zoom () {
+      var svg = d3.select('svg')
+      var g = svg.selectAll('g')
+      let transform
+      const zoom = d3.zoom().on('zoom', function (event, d) {
+        g.attr('transform', (transform = event.transform))
+      })
+      svg.call(zoom).call(zoom.transform, d3.zoomIdentity)
+    },
     updateNodeSvg () {
       let svg = null
       if (this.nodeSym) {

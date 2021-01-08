@@ -114,19 +114,7 @@ export default {
       return null
     }
   },
-  mounted () {
-    this.zoom()
-  },
   methods: {
-    zoom () {
-      var svg = d3.select('svg')
-      var g = svg.selectAll('g')
-      let transform
-      const zoom = d3.zoom().on('zoom', function (event, d) {
-        g.attr('transform', (transform = event.transform))
-      })
-      svg.call(zoom).call(zoom.transform, d3.zoomIdentity).node()
-    },
     getNodeSize (node, side) {
       let size = node._size || this.nodeSize
       if (side) size = node['_' + side] || size
