@@ -9778,7 +9778,6 @@ var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namesp
   mounted: function mounted() {
     var _this = this;
 
-    this.zoom();
     this.onResize();
     this.$nextTick(function () {
       _this.animate();
@@ -9833,6 +9832,7 @@ var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namesp
     }
   },
   methods: {
+<<<<<<< HEAD
     zoom: function zoom() {
       var svg = vue_d3_networkvue_type_script_lang_js_d3.select('.net-svg');
       var g = svg.selectAll('g');
@@ -9842,6 +9842,8 @@ var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namesp
       });
       svg.call(zoom).call(zoom.transform, vue_d3_networkvue_type_script_lang_js_d3.zoomIdentity);
     },
+=======
+>>>>>>> 514b2320bd86bdbf4216818d58764019139186c7
     updateNodeSvg: function updateNodeSvg() {
       var svg = null;
 
