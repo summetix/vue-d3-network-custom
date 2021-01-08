@@ -3054,6 +3054,32 @@ __webpack_require__.d(d3_force_namespaceObject, "forceSimulation", function() { 
 __webpack_require__.d(d3_force_namespaceObject, "forceX", function() { return d3_force_src_x; });
 __webpack_require__.d(d3_force_namespaceObject, "forceY", function() { return d3_force_src_y; });
 
+// NAMESPACE OBJECT: ./node_modules/d3-selection/src/index.js
+var src_namespaceObject = {};
+__webpack_require__.r(src_namespaceObject);
+__webpack_require__.d(src_namespaceObject, "create", function() { return src_create; });
+__webpack_require__.d(src_namespaceObject, "creator", function() { return creator; });
+__webpack_require__.d(src_namespaceObject, "local", function() { return local; });
+__webpack_require__.d(src_namespaceObject, "matcher", function() { return matcher; });
+__webpack_require__.d(src_namespaceObject, "namespace", function() { return namespace; });
+__webpack_require__.d(src_namespaceObject, "namespaces", function() { return namespaces; });
+__webpack_require__.d(src_namespaceObject, "pointer", function() { return pointer; });
+__webpack_require__.d(src_namespaceObject, "pointers", function() { return pointers; });
+__webpack_require__.d(src_namespaceObject, "select", function() { return src_select; });
+__webpack_require__.d(src_namespaceObject, "selectAll", function() { return src_selectAll; });
+__webpack_require__.d(src_namespaceObject, "selection", function() { return src_selection; });
+__webpack_require__.d(src_namespaceObject, "selector", function() { return src_selector; });
+__webpack_require__.d(src_namespaceObject, "selectorAll", function() { return selectorAll; });
+__webpack_require__.d(src_namespaceObject, "style", function() { return styleValue; });
+__webpack_require__.d(src_namespaceObject, "window", function() { return src_window; });
+
+// NAMESPACE OBJECT: ./node_modules/d3-zoom/src/index.js
+var d3_zoom_src_namespaceObject = {};
+__webpack_require__.r(d3_zoom_src_namespaceObject);
+__webpack_require__.d(d3_zoom_src_namespaceObject, "zoom", function() { return d3_zoom_src_zoom; });
+__webpack_require__.d(d3_zoom_src_namespaceObject, "zoomTransform", function() { return transform_transform; });
+__webpack_require__.d(d3_zoom_src_namespaceObject, "zoomIdentity", function() { return transform_identity; });
+
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
 
@@ -4719,12 +4745,12 @@ var initialRadius = 10,
 
 
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"42b602fa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/svgRenderer.vue?vue&type=template&id=3300b802&lang=pug&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{ref:"svg",staticClass:"net-svg",attrs:{"xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink","width":_vm.size.w,"height":_vm.size.h},on:{"mouseup":function($event){_vm.emit("dragEnd",[$event])},"&touchend":function($event){_vm.emit("dragEnd",[$event])},"&touchstart":function($event){}}},[_c('g',{attrs:{"transform":_vm.transform}},[_c('g',{staticClass:"links",attrs:{"id":"l-links"}},_vm._l((_vm.links),function(link){return _c('path',_vm._b({class:_vm.linkClass(link.id),style:(_vm.linkStyle(link)),attrs:{"d":_vm.linkPath(link),"id":link.id},on:{"click":function($event){_vm.emit("linkClick",[$event,link])},"&touchstart":function($event){_vm.emit("linkClick",[$event,link])},"mouseenter":function($event){_vm.emit("linkEnter",[$event,link])},"mouseleave":function($event){_vm.emit("linkLeave",[$event,link])}}},'path',_vm.linkAttrs(link),false))})),(!_vm.noNodes)?_c('g',{staticClass:"nodes",attrs:{"id":"l-nodes"}},[_vm._l((_vm.nodes),function(node,key){return [(_vm.svgIcon(node))?_c('svg',_vm._b({key:key,class:_vm.nodeClass(node,["node-svg"]),style:(_vm.nodeStyle(node)),attrs:{"viewBox":_vm.svgIcon(node).attrs.viewBox,"width":_vm.getNodeSize(node, "width"),"height":_vm.getNodeSize(node, "height"),"x":node.x - _vm.getNodeSize(node, "width") / 2,"y":node.y - _vm.getNodeSize(node, "height") / 2,"title":node.name},domProps:{"innerHTML":_vm._s(_vm.svgIcon(node).data)},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"mouseover":function($event){_vm.emit("nodeOver",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'svg',node._svgAttrs,false)):_c('circle',_vm._b({key:key,class:_vm.nodeClass(node),style:(_vm.nodeStyle(node)),attrs:{"r":_vm.getNodeSize(node) / 2,"cx":node.x,"cy":node.y,"title":node.name},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'circle',node._svgAttrs,false))]})],2):_vm._e(),(_vm.linkLabels)?_c('g',{staticClass:"labels",attrs:{"id":"link-labels"}},_vm._l((_vm.links),function(link){return _c('text',{staticClass:"link-label",attrs:{"font-size":_vm.fontSize}},[_c('textPath',{attrs:{"xlink:href":'#' + link.id,"startOffset":"50%"}},[_vm._v(_vm._s(link.name))])])})):_vm._e(),(_vm.nodeLabels)?_c('g',{staticClass:"labels",attrs:{"id":"node-labels"}},_vm._l((_vm.nodes),function(node){return _c('text',{staticClass:"node-label",class:(node._labelClass) ? node._labelClass : "",attrs:{"x":node.x + (_vm.getNodeSize(node) / 2) + (_vm.fontSize / 2),"y":node.y + _vm.labelOffset.y,"font-size":_vm.fontSize,"stroke-width":_vm.fontSize / 8}},[_vm._v(_vm._s(node.name))])})):_vm._e()])])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"42b602fa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/svgRenderer.vue?vue&type=template&id=7e0fa694&lang=pug&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{ref:"svg",staticClass:"net-svg",attrs:{"xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink","width":_vm.size.w,"height":_vm.size.h},on:{"mouseup":function($event){_vm.emit("dragEnd",[$event])},"&touchend":function($event){_vm.emit("dragEnd",[$event])},"&touchstart":function($event){}}},[_c('g',{attrs:{"id":"container"}},[_c('g',{staticClass:"links",attrs:{"id":"l-links"}},_vm._l((_vm.links),function(link){return _c('path',_vm._b({class:_vm.linkClass(link.id),style:(_vm.linkStyle(link)),attrs:{"d":_vm.linkPath(link),"id":link.id},on:{"click":function($event){_vm.emit("linkClick",[$event,link])},"&touchstart":function($event){_vm.emit("linkClick",[$event,link])},"mouseenter":function($event){_vm.emit("linkEnter",[$event,link])},"mouseleave":function($event){_vm.emit("linkLeave",[$event,link])}}},'path',_vm.linkAttrs(link),false))})),(!_vm.noNodes)?_c('g',{staticClass:"nodes",attrs:{"id":"l-nodes"}},[_vm._l((_vm.nodes),function(node,key){return [(_vm.svgIcon(node))?_c('svg',_vm._b({key:key,class:_vm.nodeClass(node,["node-svg"]),style:(_vm.nodeStyle(node)),attrs:{"viewBox":_vm.svgIcon(node).attrs.viewBox,"width":_vm.getNodeSize(node, "width"),"height":_vm.getNodeSize(node, "height"),"x":node.x - _vm.getNodeSize(node, "width") / 2,"y":node.y - _vm.getNodeSize(node, "height") / 2,"title":node.name},domProps:{"innerHTML":_vm._s(_vm.svgIcon(node).data)},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"mouseover":function($event){_vm.emit("nodeOver",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'svg',node._svgAttrs,false)):_c('circle',_vm._b({key:key,class:_vm.nodeClass(node),style:(_vm.nodeStyle(node)),attrs:{"r":_vm.getNodeSize(node) / 2,"cx":node.x,"cy":node.y,"title":node.name},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'circle',node._svgAttrs,false))]})],2):_vm._e(),(_vm.linkLabels)?_c('g',{staticClass:"labels",attrs:{"id":"link-labels"}},_vm._l((_vm.links),function(link){return _c('text',{staticClass:"link-label",attrs:{"font-size":_vm.fontSize}},[_c('textPath',{attrs:{"xlink:href":'#' + link.id,"startOffset":"50%"}},[_vm._v(_vm._s(link.name))])])})):_vm._e(),(_vm.nodeLabels)?_c('g',{staticClass:"labels",attrs:{"id":"node-labels"}},_vm._l((_vm.nodes),function(node){return _c('text',{staticClass:"node-label",class:(node._labelClass) ? node._labelClass : "",attrs:{"x":node.x + (_vm.getNodeSize(node) / 2) + (_vm.fontSize / 2),"y":node.y + _vm.labelOffset.y,"font-size":_vm.fontSize,"stroke-width":_vm.fontSize / 8}},[_vm._v(_vm._s(node.name))])})):_vm._e()])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/svgRenderer.vue?vue&type=template&id=3300b802&lang=pug&
+// CONCATENATED MODULE: ./src/components/svgRenderer.vue?vue&type=template&id=7e0fa694&lang=pug&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.regexp.replace.js
 var es6_regexp_replace = __webpack_require__("a481");
@@ -5006,23 +5032,52 @@ var es7_object_values = __webpack_require__("8615");
     return url;
   }
 });
-// CONCATENATED MODULE: ./node_modules/d3/dist/package.js
-var package_name = "d3";
-var version = "6.3.1";
-var description = "Data-Driven Documents";
-var keywords = ["dom","visualization","svg","animation","canvas"];
-var homepage = "https://d3js.org";
-var license = "BSD-3-Clause";
-var author = {"name":"Mike Bostock","url":"https://bost.ocks.org/mike"};
-var main = "dist/d3.node.js";
-var unpkg = "dist/d3.min.js";
-var jsdelivr = "dist/d3.min.js";
-var package_module = "index.js";
-var repository = {"type":"git","url":"https://github.com/d3/d3.git"};
-var files = ["dist/**/*.js","index.js"];
-var scripts = {"pretest":"rimraf dist && mkdir dist && json2module package.json > dist/package.js && rollup -c","test":"tape 'test/**/*-test.js'","prepublishOnly":"yarn test","postpublish":"git push && git push --tags && cd ../d3.github.com && git pull && cp ../d3/dist/d3.js d3.v${npm_package_version%%.*}.js && cp ../d3/dist/d3.min.js d3.v${npm_package_version%%.*}.min.js && git add d3.v${npm_package_version%%.*}.js d3.v${npm_package_version%%.*}.min.js && git commit -m \"d3 ${npm_package_version}\" && git push && cd - && zip -j dist/d3.zip -- LICENSE README.md API.md CHANGES.md dist/d3.js dist/d3.min.js"};
-var devDependencies = {"json2module":"0.0","rimraf":"3","rollup":"2","rollup-plugin-ascii":"0.0","rollup-plugin-node-resolve":"5","rollup-plugin-terser":"7","tape":"4","tape-await":"0.1"};
-var dependencies = {"d3-array":"2","d3-axis":"2","d3-brush":"2","d3-chord":"2","d3-color":"2","d3-contour":"2","d3-delaunay":"5","d3-dispatch":"2","d3-drag":"2","d3-dsv":"2","d3-ease":"2","d3-fetch":"2","d3-force":"2","d3-format":"2","d3-geo":"2","d3-hierarchy":"2","d3-interpolate":"2","d3-path":"2","d3-polygon":"2","d3-quadtree":"2","d3-random":"2","d3-scale":"3","d3-scale-chromatic":"2","d3-selection":"2","d3-shape":"2","d3-time":"2","d3-time-format":"3","d3-timer":"2","d3-transition":"2","d3-zoom":"2"};
+// CONCATENATED MODULE: ./node_modules/d3-selection/src/namespaces.js
+var xhtml = "http://www.w3.org/1999/xhtml";
+
+/* harmony default export */ var namespaces = ({
+  svg: "http://www.w3.org/2000/svg",
+  xhtml: xhtml,
+  xlink: "http://www.w3.org/1999/xlink",
+  xml: "http://www.w3.org/XML/1998/namespace",
+  xmlns: "http://www.w3.org/2000/xmlns/"
+});
+
+// CONCATENATED MODULE: ./node_modules/d3-selection/src/namespace.js
+
+
+/* harmony default export */ var namespace = (function(name) {
+  var prefix = name += "", i = prefix.indexOf(":");
+  if (i >= 0 && (prefix = name.slice(0, i)) !== "xmlns") name = name.slice(i + 1);
+  return namespaces.hasOwnProperty(prefix) ? {space: namespaces[prefix], local: name} : name; // eslint-disable-line no-prototype-builtins
+});
+
+// CONCATENATED MODULE: ./node_modules/d3-selection/src/creator.js
+
+
+
+function creatorInherit(name) {
+  return function() {
+    var document = this.ownerDocument,
+        uri = this.namespaceURI;
+    return uri === xhtml && document.documentElement.namespaceURI === xhtml
+        ? document.createElement(name)
+        : document.createElementNS(uri, name);
+  };
+}
+
+function creatorFixed(fullname) {
+  return function() {
+    return this.ownerDocument.createElementNS(fullname.space, fullname.local);
+  };
+}
+
+/* harmony default export */ var creator = (function(name) {
+  var fullname = namespace(name);
+  return (fullname.local
+      ? creatorFixed
+      : creatorInherit)(fullname);
+});
 
 // CONCATENATED MODULE: ./node_modules/d3-selection/src/selector.js
 function none() {}
@@ -5454,26 +5509,6 @@ function ascending(a, b) {
   return this;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/namespaces.js
-var xhtml = "http://www.w3.org/1999/xhtml";
-
-/* harmony default export */ var namespaces = ({
-  svg: "http://www.w3.org/2000/svg",
-  xhtml: xhtml,
-  xlink: "http://www.w3.org/1999/xlink",
-  xml: "http://www.w3.org/XML/1998/namespace",
-  xmlns: "http://www.w3.org/2000/xmlns/"
-});
-
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/namespace.js
-
-
-/* harmony default export */ var namespace = (function(name) {
-  var prefix = name += "", i = prefix.indexOf(":");
-  if (i >= 0 && (prefix = name.slice(0, i)) !== "xmlns") name = name.slice(i + 1);
-  return namespaces.hasOwnProperty(prefix) ? {space: namespaces[prefix], local: name} : name; // eslint-disable-line no-prototype-builtins
-});
-
 // CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/attr.js
 
 
@@ -5756,33 +5791,6 @@ function lower() {
   return this.each(lower);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/creator.js
-
-
-
-function creatorInherit(name) {
-  return function() {
-    var document = this.ownerDocument,
-        uri = this.namespaceURI;
-    return uri === xhtml && document.documentElement.namespaceURI === xhtml
-        ? document.createElement(name)
-        : document.createElementNS(uri, name);
-  };
-}
-
-function creatorFixed(fullname) {
-  return function() {
-    return this.ownerDocument.createElementNS(fullname.space, fullname.local);
-  };
-}
-
-/* harmony default export */ var creator = (function(name) {
-  var fullname = namespace(name);
-  return (fullname.local
-      ? creatorFixed
-      : creatorInherit)(fullname);
-});
-
 // CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/append.js
 
 
@@ -6056,6 +6064,112 @@ Selection.prototype = selection_selection.prototype = {
       : new Selection([[selector]], selection_root);
 });
 
+// CONCATENATED MODULE: ./node_modules/d3-selection/src/create.js
+
+
+
+/* harmony default export */ var src_create = (function(name) {
+  return src_select(creator(name).call(document.documentElement));
+});
+
+// CONCATENATED MODULE: ./node_modules/d3-selection/src/local.js
+var nextId = 0;
+
+function local() {
+  return new Local;
+}
+
+function Local() {
+  this._ = "@" + (++nextId).toString(36);
+}
+
+Local.prototype = local.prototype = {
+  constructor: Local,
+  get: function(node) {
+    var id = this._;
+    while (!(id in node)) if (!(node = node.parentNode)) return;
+    return node[id];
+  },
+  set: function(node, value) {
+    return node[this._] = value;
+  },
+  remove: function(node) {
+    return this._ in node && delete node[this._];
+  },
+  toString: function() {
+    return this._;
+  }
+};
+
+// CONCATENATED MODULE: ./node_modules/d3-selection/src/sourceEvent.js
+/* harmony default export */ var sourceEvent = (function(event) {
+  let sourceEvent;
+  while (sourceEvent = event.sourceEvent) event = sourceEvent;
+  return event;
+});
+
+// CONCATENATED MODULE: ./node_modules/d3-selection/src/pointer.js
+
+
+/* harmony default export */ var pointer = (function(event, node) {
+  event = sourceEvent(event);
+  if (node === undefined) node = event.currentTarget;
+  if (node) {
+    var svg = node.ownerSVGElement || node;
+    if (svg.createSVGPoint) {
+      var point = svg.createSVGPoint();
+      point.x = event.clientX, point.y = event.clientY;
+      point = point.matrixTransform(node.getScreenCTM().inverse());
+      return [point.x, point.y];
+    }
+    if (node.getBoundingClientRect) {
+      var rect = node.getBoundingClientRect();
+      return [event.clientX - rect.left - node.clientLeft, event.clientY - rect.top - node.clientTop];
+    }
+  }
+  return [event.pageX, event.pageY];
+});
+
+// CONCATENATED MODULE: ./node_modules/d3-selection/src/pointers.js
+
+
+
+/* harmony default export */ var pointers = (function(events, node) {
+  if (events.target) { // i.e., instanceof Event, not TouchList or iterable
+    events = sourceEvent(events);
+    if (node === undefined) node = events.currentTarget;
+    events = events.touches || [events];
+  }
+  return Array.from(events, event => pointer(event, node));
+});
+
+// CONCATENATED MODULE: ./node_modules/d3-selection/src/selectAll.js
+
+
+
+/* harmony default export */ var src_selectAll = (function(selector) {
+  return typeof selector === "string"
+      ? new Selection([document.querySelectorAll(selector)], [document.documentElement])
+      : new Selection([selector == null ? [] : src_array(selector)], selection_root);
+});
+
+// CONCATENATED MODULE: ./node_modules/d3-selection/src/index.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // CONCATENATED MODULE: ./node_modules/d3-drag/src/noevent.js
 function nopropagation(event) {
   event.stopImmediatePropagation();
@@ -6094,6 +6208,472 @@ function yesdrag(view, noclick) {
     root.style.MozUserSelect = root.__noselect;
     delete root.__noselect;
   }
+}
+
+// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/zoom.js
+var epsilon2 = 1e-12;
+
+function cosh(x) {
+  return ((x = Math.exp(x)) + 1 / x) / 2;
+}
+
+function sinh(x) {
+  return ((x = Math.exp(x)) - 1 / x) / 2;
+}
+
+function tanh(x) {
+  return ((x = Math.exp(2 * x)) - 1) / (x + 1);
+}
+
+/* harmony default export */ var src_zoom = ((function zoomRho(rho, rho2, rho4) {
+
+  // p0 = [ux0, uy0, w0]
+  // p1 = [ux1, uy1, w1]
+  function zoom(p0, p1) {
+    var ux0 = p0[0], uy0 = p0[1], w0 = p0[2],
+        ux1 = p1[0], uy1 = p1[1], w1 = p1[2],
+        dx = ux1 - ux0,
+        dy = uy1 - uy0,
+        d2 = dx * dx + dy * dy,
+        i,
+        S;
+
+    // Special case for u0 ≅ u1.
+    if (d2 < epsilon2) {
+      S = Math.log(w1 / w0) / rho;
+      i = function(t) {
+        return [
+          ux0 + t * dx,
+          uy0 + t * dy,
+          w0 * Math.exp(rho * t * S)
+        ];
+      }
+    }
+
+    // General case.
+    else {
+      var d1 = Math.sqrt(d2),
+          b0 = (w1 * w1 - w0 * w0 + rho4 * d2) / (2 * w0 * rho2 * d1),
+          b1 = (w1 * w1 - w0 * w0 - rho4 * d2) / (2 * w1 * rho2 * d1),
+          r0 = Math.log(Math.sqrt(b0 * b0 + 1) - b0),
+          r1 = Math.log(Math.sqrt(b1 * b1 + 1) - b1);
+      S = (r1 - r0) / rho;
+      i = function(t) {
+        var s = t * S,
+            coshr0 = cosh(r0),
+            u = w0 / (rho2 * d1) * (coshr0 * tanh(rho * s + r0) - sinh(r0));
+        return [
+          ux0 + u * dx,
+          uy0 + u * dy,
+          w0 * coshr0 / cosh(rho * s + r0)
+        ];
+      }
+    }
+
+    i.duration = S * 1000 * rho / Math.SQRT2;
+
+    return i;
+  }
+
+  zoom.rho = function(_) {
+    var _1 = Math.max(1e-3, +_), _2 = _1 * _1, _4 = _2 * _2;
+    return zoomRho(_1, _2, _4);
+  };
+
+  return zoom;
+})(Math.SQRT2, 2, 4));
+
+// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/schedule.js
+
+
+
+var emptyOn = src_dispatch("start", "end", "cancel", "interrupt");
+var emptyTween = [];
+
+var CREATED = 0;
+var SCHEDULED = 1;
+var STARTING = 2;
+var STARTED = 3;
+var RUNNING = 4;
+var ENDING = 5;
+var ENDED = 6;
+
+/* harmony default export */ var transition_schedule = (function(node, name, id, index, group, timing) {
+  var schedules = node.__transition;
+  if (!schedules) node.__transition = {};
+  else if (id in schedules) return;
+  schedule_create(node, id, {
+    name: name,
+    index: index, // For context during callback.
+    group: group, // For context during callback.
+    on: emptyOn,
+    tween: emptyTween,
+    time: timing.time,
+    delay: timing.delay,
+    duration: timing.duration,
+    ease: timing.ease,
+    timer: null,
+    state: CREATED
+  });
+});
+
+function init(node, id) {
+  var schedule = schedule_get(node, id);
+  if (schedule.state > CREATED) throw new Error("too late; already scheduled");
+  return schedule;
+}
+
+function schedule_set(node, id) {
+  var schedule = schedule_get(node, id);
+  if (schedule.state > STARTED) throw new Error("too late; already running");
+  return schedule;
+}
+
+function schedule_get(node, id) {
+  var schedule = node.__transition;
+  if (!schedule || !(schedule = schedule[id])) throw new Error("transition not found");
+  return schedule;
+}
+
+function schedule_create(node, id, self) {
+  var schedules = node.__transition,
+      tween;
+
+  // Initialize the self timer when the transition is created.
+  // Note the actual delay is not known until the first callback!
+  schedules[id] = self;
+  self.timer = timer(schedule, 0, self.time);
+
+  function schedule(elapsed) {
+    self.state = SCHEDULED;
+    self.timer.restart(start, self.delay, self.time);
+
+    // If the elapsed delay is less than our first sleep, start immediately.
+    if (self.delay <= elapsed) start(elapsed - self.delay);
+  }
+
+  function start(elapsed) {
+    var i, j, n, o;
+
+    // If the state is not SCHEDULED, then we previously errored on start.
+    if (self.state !== SCHEDULED) return stop();
+
+    for (i in schedules) {
+      o = schedules[i];
+      if (o.name !== self.name) continue;
+
+      // While this element already has a starting transition during this frame,
+      // defer starting an interrupting transition until that transition has a
+      // chance to tick (and possibly end); see d3/d3-transition#54!
+      if (o.state === STARTED) return src_timeout(start);
+
+      // Interrupt the active transition, if any.
+      if (o.state === RUNNING) {
+        o.state = ENDED;
+        o.timer.stop();
+        o.on.call("interrupt", node, node.__data__, o.index, o.group);
+        delete schedules[i];
+      }
+
+      // Cancel any pre-empted transitions.
+      else if (+i < id) {
+        o.state = ENDED;
+        o.timer.stop();
+        o.on.call("cancel", node, node.__data__, o.index, o.group);
+        delete schedules[i];
+      }
+    }
+
+    // Defer the first tick to end of the current frame; see d3/d3#1576.
+    // Note the transition may be canceled after start and before the first tick!
+    // Note this must be scheduled before the start event; see d3/d3-transition#16!
+    // Assuming this is successful, subsequent callbacks go straight to tick.
+    src_timeout(function() {
+      if (self.state === STARTED) {
+        self.state = RUNNING;
+        self.timer.restart(tick, self.delay, self.time);
+        tick(elapsed);
+      }
+    });
+
+    // Dispatch the start event.
+    // Note this must be done before the tween are initialized.
+    self.state = STARTING;
+    self.on.call("start", node, node.__data__, self.index, self.group);
+    if (self.state !== STARTING) return; // interrupted
+    self.state = STARTED;
+
+    // Initialize the tween, deleting null tween.
+    tween = new Array(n = self.tween.length);
+    for (i = 0, j = -1; i < n; ++i) {
+      if (o = self.tween[i].value.call(node, node.__data__, self.index, self.group)) {
+        tween[++j] = o;
+      }
+    }
+    tween.length = j + 1;
+  }
+
+  function tick(elapsed) {
+    var t = elapsed < self.duration ? self.ease.call(null, elapsed / self.duration) : (self.timer.restart(stop), self.state = ENDING, 1),
+        i = -1,
+        n = tween.length;
+
+    while (++i < n) {
+      tween[i].call(node, t);
+    }
+
+    // Dispatch the end event.
+    if (self.state === ENDING) {
+      self.on.call("end", node, node.__data__, self.index, self.group);
+      stop();
+    }
+  }
+
+  function stop() {
+    self.state = ENDED;
+    self.timer.stop();
+    delete schedules[id];
+    for (var i in schedules) return; // eslint-disable-line no-unused-vars
+    delete node.__transition;
+  }
+}
+
+// CONCATENATED MODULE: ./node_modules/d3-transition/src/interrupt.js
+
+
+/* harmony default export */ var interrupt = (function(node, name) {
+  var schedules = node.__transition,
+      schedule,
+      active,
+      empty = true,
+      i;
+
+  if (!schedules) return;
+
+  name = name == null ? null : name + "";
+
+  for (i in schedules) {
+    if ((schedule = schedules[i]).name !== name) { empty = false; continue; }
+    active = schedule.state > STARTING && schedule.state < ENDING;
+    schedule.state = ENDED;
+    schedule.timer.stop();
+    schedule.on.call(active ? "interrupt" : "cancel", node, node.__data__, schedule.index, schedule.group);
+    delete schedules[i];
+  }
+
+  if (empty) delete node.__transition;
+});
+
+// CONCATENATED MODULE: ./node_modules/d3-transition/src/selection/interrupt.js
+
+
+/* harmony default export */ var selection_interrupt = (function(name) {
+  return this.each(function() {
+    interrupt(this, name);
+  });
+});
+
+// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/number.js
+/* harmony default export */ var number = (function(a, b) {
+  return a = +a, b = +b, function(t) {
+    return a * (1 - t) + b * t;
+  };
+});
+
+// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/transform/decompose.js
+var degrees = 180 / Math.PI;
+
+var identity = {
+  translateX: 0,
+  translateY: 0,
+  rotate: 0,
+  skewX: 0,
+  scaleX: 1,
+  scaleY: 1
+};
+
+/* harmony default export */ var decompose = (function(a, b, c, d, e, f) {
+  var scaleX, scaleY, skewX;
+  if (scaleX = Math.sqrt(a * a + b * b)) a /= scaleX, b /= scaleX;
+  if (skewX = a * c + b * d) c -= a * skewX, d -= b * skewX;
+  if (scaleY = Math.sqrt(c * c + d * d)) c /= scaleY, d /= scaleY, skewX /= scaleY;
+  if (a * d < b * c) a = -a, b = -b, skewX = -skewX, scaleX = -scaleX;
+  return {
+    translateX: e,
+    translateY: f,
+    rotate: Math.atan2(b, a) * degrees,
+    skewX: Math.atan(skewX) * degrees,
+    scaleX: scaleX,
+    scaleY: scaleY
+  };
+});
+
+// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/transform/parse.js
+
+
+var svgNode;
+
+/* eslint-disable no-undef */
+function parseCss(value) {
+  const m = new (typeof DOMMatrix === "function" ? DOMMatrix : WebKitCSSMatrix)(value + "");
+  return m.isIdentity ? identity : decompose(m.a, m.b, m.c, m.d, m.e, m.f);
+}
+
+function parseSvg(value) {
+  if (value == null) return identity;
+  if (!svgNode) svgNode = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  svgNode.setAttribute("transform", value);
+  if (!(value = svgNode.transform.baseVal.consolidate())) return identity;
+  value = value.matrix;
+  return decompose(value.a, value.b, value.c, value.d, value.e, value.f);
+}
+
+// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/transform/index.js
+
+
+
+function interpolateTransform(parse, pxComma, pxParen, degParen) {
+
+  function pop(s) {
+    return s.length ? s.pop() + " " : "";
+  }
+
+  function translate(xa, ya, xb, yb, s, q) {
+    if (xa !== xb || ya !== yb) {
+      var i = s.push("translate(", null, pxComma, null, pxParen);
+      q.push({i: i - 4, x: number(xa, xb)}, {i: i - 2, x: number(ya, yb)});
+    } else if (xb || yb) {
+      s.push("translate(" + xb + pxComma + yb + pxParen);
+    }
+  }
+
+  function rotate(a, b, s, q) {
+    if (a !== b) {
+      if (a - b > 180) b += 360; else if (b - a > 180) a += 360; // shortest path
+      q.push({i: s.push(pop(s) + "rotate(", null, degParen) - 2, x: number(a, b)});
+    } else if (b) {
+      s.push(pop(s) + "rotate(" + b + degParen);
+    }
+  }
+
+  function skewX(a, b, s, q) {
+    if (a !== b) {
+      q.push({i: s.push(pop(s) + "skewX(", null, degParen) - 2, x: number(a, b)});
+    } else if (b) {
+      s.push(pop(s) + "skewX(" + b + degParen);
+    }
+  }
+
+  function scale(xa, ya, xb, yb, s, q) {
+    if (xa !== xb || ya !== yb) {
+      var i = s.push(pop(s) + "scale(", null, ",", null, ")");
+      q.push({i: i - 4, x: number(xa, xb)}, {i: i - 2, x: number(ya, yb)});
+    } else if (xb !== 1 || yb !== 1) {
+      s.push(pop(s) + "scale(" + xb + "," + yb + ")");
+    }
+  }
+
+  return function(a, b) {
+    var s = [], // string constants and placeholders
+        q = []; // number interpolators
+    a = parse(a), b = parse(b);
+    translate(a.translateX, a.translateY, b.translateX, b.translateY, s, q);
+    rotate(a.rotate, b.rotate, s, q);
+    skewX(a.skewX, b.skewX, s, q);
+    scale(a.scaleX, a.scaleY, b.scaleX, b.scaleY, s, q);
+    a = b = null; // gc
+    return function(t) {
+      var i = -1, n = q.length, o;
+      while (++i < n) s[(o = q[i]).i] = o.x(t);
+      return s.join("");
+    };
+  };
+}
+
+var interpolateTransformCss = interpolateTransform(parseCss, "px, ", "px)", "deg)");
+var interpolateTransformSvg = interpolateTransform(parseSvg, ", ", ")", ")");
+
+// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/tween.js
+
+
+function tweenRemove(id, name) {
+  var tween0, tween1;
+  return function() {
+    var schedule = schedule_set(this, id),
+        tween = schedule.tween;
+
+    // If this node shared tween with the previous node,
+    // just assign the updated shared tween and we’re done!
+    // Otherwise, copy-on-write.
+    if (tween !== tween0) {
+      tween1 = tween0 = tween;
+      for (var i = 0, n = tween1.length; i < n; ++i) {
+        if (tween1[i].name === name) {
+          tween1 = tween1.slice();
+          tween1.splice(i, 1);
+          break;
+        }
+      }
+    }
+
+    schedule.tween = tween1;
+  };
+}
+
+function tweenFunction(id, name, value) {
+  var tween0, tween1;
+  if (typeof value !== "function") throw new Error;
+  return function() {
+    var schedule = schedule_set(this, id),
+        tween = schedule.tween;
+
+    // If this node shared tween with the previous node,
+    // just assign the updated shared tween and we’re done!
+    // Otherwise, copy-on-write.
+    if (tween !== tween0) {
+      tween1 = (tween0 = tween).slice();
+      for (var t = {name: name, value: value}, i = 0, n = tween1.length; i < n; ++i) {
+        if (tween1[i].name === name) {
+          tween1[i] = t;
+          break;
+        }
+      }
+      if (i === n) tween1.push(t);
+    }
+
+    schedule.tween = tween1;
+  };
+}
+
+/* harmony default export */ var transition_tween = (function(name, value) {
+  var id = this._id;
+
+  name += "";
+
+  if (arguments.length < 2) {
+    var tween = schedule_get(this.node(), id).tween;
+    for (var i = 0, n = tween.length, t; i < n; ++i) {
+      if ((t = tween[i]).name === name) {
+        return t.value;
+      }
+    }
+    return null;
+  }
+
+  return this.each((value == null ? tweenRemove : tweenFunction)(id, name, value));
+});
+
+function tweenValue(transition, name, value) {
+  var id = transition._id;
+
+  transition.each(function() {
+    var schedule = schedule_set(this, id);
+    (schedule.value || (schedule.value = {}))[name] = value.apply(this, arguments);
+  });
+
+  return function(node) {
+    return schedule_get(node, id).value[name];
+  };
 }
 
 // CONCATENATED MODULE: ./node_modules/d3-color/src/define.js
@@ -6608,86 +7188,6 @@ function rgbSpline(spline) {
 var rgbBasis = rgbSpline(src_basis);
 var rgbBasisClosed = rgbSpline(basisClosed);
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/numberArray.js
-/* harmony default export */ var numberArray = (function(a, b) {
-  if (!b) b = [];
-  var n = a ? Math.min(b.length, a.length) : 0,
-      c = b.slice(),
-      i;
-  return function(t) {
-    for (i = 0; i < n; ++i) c[i] = a[i] * (1 - t) + b[i] * t;
-    return c;
-  };
-});
-
-function isNumberArray(x) {
-  return ArrayBuffer.isView(x) && !(x instanceof DataView);
-}
-
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/array.js
-
-
-
-/* harmony default export */ var d3_interpolate_src_array = (function(a, b) {
-  return (isNumberArray(b) ? numberArray : genericArray)(a, b);
-});
-
-function genericArray(a, b) {
-  var nb = b ? b.length : 0,
-      na = a ? Math.min(nb, a.length) : 0,
-      x = new Array(na),
-      c = new Array(nb),
-      i;
-
-  for (i = 0; i < na; ++i) x[i] = src_value(a[i], b[i]);
-  for (; i < nb; ++i) c[i] = b[i];
-
-  return function(t) {
-    for (i = 0; i < na; ++i) c[i] = x[i](t);
-    return c;
-  };
-}
-
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/date.js
-/* harmony default export */ var date = (function(a, b) {
-  var d = new Date;
-  return a = +a, b = +b, function(t) {
-    return d.setTime(a * (1 - t) + b * t), d;
-  };
-});
-
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/number.js
-/* harmony default export */ var number = (function(a, b) {
-  return a = +a, b = +b, function(t) {
-    return a * (1 - t) + b * t;
-  };
-});
-
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/object.js
-
-
-/* harmony default export */ var object = (function(a, b) {
-  var i = {},
-      c = {},
-      k;
-
-  if (a === null || typeof a !== "object") a = {};
-  if (b === null || typeof b !== "object") b = {};
-
-  for (k in b) {
-    if (k in a) {
-      i[k] = src_value(a[k], b[k]);
-    } else {
-      c[k] = b[k];
-    }
-  }
-
-  return function(t) {
-    for (k in i) c[k] = i[k](t);
-    return c;
-  };
-});
-
 // CONCATENATED MODULE: ./node_modules/d3-interpolate/src/string.js
 
 
@@ -6753,445 +7253,6 @@ function one(b) {
           return s.join("");
         });
 });
-
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/value.js
-
-
-
-
-
-
-
-
-
-
-/* harmony default export */ var src_value = (function(a, b) {
-  var t = typeof b, c;
-  return b == null || t === "boolean" ? d3_interpolate_src_constant(b)
-      : (t === "number" ? number
-      : t === "string" ? ((c = color_color(b)) ? (b = c, src_rgb) : string)
-      : b instanceof color_color ? src_rgb
-      : b instanceof Date ? date
-      : isNumberArray(b) ? numberArray
-      : Array.isArray(b) ? genericArray
-      : typeof b.valueOf !== "function" && typeof b.toString !== "function" || isNaN(b) ? object
-      : number)(a, b);
-});
-
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/sourceEvent.js
-/* harmony default export */ var sourceEvent = (function(event) {
-  let sourceEvent;
-  while (sourceEvent = event.sourceEvent) event = sourceEvent;
-  return event;
-});
-
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/pointer.js
-
-
-/* harmony default export */ var pointer = (function(event, node) {
-  event = sourceEvent(event);
-  if (node === undefined) node = event.currentTarget;
-  if (node) {
-    var svg = node.ownerSVGElement || node;
-    if (svg.createSVGPoint) {
-      var point = svg.createSVGPoint();
-      point.x = event.clientX, point.y = event.clientY;
-      point = point.matrixTransform(node.getScreenCTM().inverse());
-      return [point.x, point.y];
-    }
-    if (node.getBoundingClientRect) {
-      var rect = node.getBoundingClientRect();
-      return [event.clientX - rect.left - node.clientLeft, event.clientY - rect.top - node.clientTop];
-    }
-  }
-  return [event.pageX, event.pageY];
-});
-
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/schedule.js
-
-
-
-var emptyOn = src_dispatch("start", "end", "cancel", "interrupt");
-var emptyTween = [];
-
-var CREATED = 0;
-var SCHEDULED = 1;
-var STARTING = 2;
-var STARTED = 3;
-var RUNNING = 4;
-var ENDING = 5;
-var ENDED = 6;
-
-/* harmony default export */ var transition_schedule = (function(node, name, id, index, group, timing) {
-  var schedules = node.__transition;
-  if (!schedules) node.__transition = {};
-  else if (id in schedules) return;
-  schedule_create(node, id, {
-    name: name,
-    index: index, // For context during callback.
-    group: group, // For context during callback.
-    on: emptyOn,
-    tween: emptyTween,
-    time: timing.time,
-    delay: timing.delay,
-    duration: timing.duration,
-    ease: timing.ease,
-    timer: null,
-    state: CREATED
-  });
-});
-
-function init(node, id) {
-  var schedule = schedule_get(node, id);
-  if (schedule.state > CREATED) throw new Error("too late; already scheduled");
-  return schedule;
-}
-
-function schedule_set(node, id) {
-  var schedule = schedule_get(node, id);
-  if (schedule.state > STARTED) throw new Error("too late; already running");
-  return schedule;
-}
-
-function schedule_get(node, id) {
-  var schedule = node.__transition;
-  if (!schedule || !(schedule = schedule[id])) throw new Error("transition not found");
-  return schedule;
-}
-
-function schedule_create(node, id, self) {
-  var schedules = node.__transition,
-      tween;
-
-  // Initialize the self timer when the transition is created.
-  // Note the actual delay is not known until the first callback!
-  schedules[id] = self;
-  self.timer = timer(schedule, 0, self.time);
-
-  function schedule(elapsed) {
-    self.state = SCHEDULED;
-    self.timer.restart(start, self.delay, self.time);
-
-    // If the elapsed delay is less than our first sleep, start immediately.
-    if (self.delay <= elapsed) start(elapsed - self.delay);
-  }
-
-  function start(elapsed) {
-    var i, j, n, o;
-
-    // If the state is not SCHEDULED, then we previously errored on start.
-    if (self.state !== SCHEDULED) return stop();
-
-    for (i in schedules) {
-      o = schedules[i];
-      if (o.name !== self.name) continue;
-
-      // While this element already has a starting transition during this frame,
-      // defer starting an interrupting transition until that transition has a
-      // chance to tick (and possibly end); see d3/d3-transition#54!
-      if (o.state === STARTED) return src_timeout(start);
-
-      // Interrupt the active transition, if any.
-      if (o.state === RUNNING) {
-        o.state = ENDED;
-        o.timer.stop();
-        o.on.call("interrupt", node, node.__data__, o.index, o.group);
-        delete schedules[i];
-      }
-
-      // Cancel any pre-empted transitions.
-      else if (+i < id) {
-        o.state = ENDED;
-        o.timer.stop();
-        o.on.call("cancel", node, node.__data__, o.index, o.group);
-        delete schedules[i];
-      }
-    }
-
-    // Defer the first tick to end of the current frame; see d3/d3#1576.
-    // Note the transition may be canceled after start and before the first tick!
-    // Note this must be scheduled before the start event; see d3/d3-transition#16!
-    // Assuming this is successful, subsequent callbacks go straight to tick.
-    src_timeout(function() {
-      if (self.state === STARTED) {
-        self.state = RUNNING;
-        self.timer.restart(tick, self.delay, self.time);
-        tick(elapsed);
-      }
-    });
-
-    // Dispatch the start event.
-    // Note this must be done before the tween are initialized.
-    self.state = STARTING;
-    self.on.call("start", node, node.__data__, self.index, self.group);
-    if (self.state !== STARTING) return; // interrupted
-    self.state = STARTED;
-
-    // Initialize the tween, deleting null tween.
-    tween = new Array(n = self.tween.length);
-    for (i = 0, j = -1; i < n; ++i) {
-      if (o = self.tween[i].value.call(node, node.__data__, self.index, self.group)) {
-        tween[++j] = o;
-      }
-    }
-    tween.length = j + 1;
-  }
-
-  function tick(elapsed) {
-    var t = elapsed < self.duration ? self.ease.call(null, elapsed / self.duration) : (self.timer.restart(stop), self.state = ENDING, 1),
-        i = -1,
-        n = tween.length;
-
-    while (++i < n) {
-      tween[i].call(node, t);
-    }
-
-    // Dispatch the end event.
-    if (self.state === ENDING) {
-      self.on.call("end", node, node.__data__, self.index, self.group);
-      stop();
-    }
-  }
-
-  function stop() {
-    self.state = ENDED;
-    self.timer.stop();
-    delete schedules[id];
-    for (var i in schedules) return; // eslint-disable-line no-unused-vars
-    delete node.__transition;
-  }
-}
-
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/interrupt.js
-
-
-/* harmony default export */ var interrupt = (function(node, name) {
-  var schedules = node.__transition,
-      schedule,
-      active,
-      empty = true,
-      i;
-
-  if (!schedules) return;
-
-  name = name == null ? null : name + "";
-
-  for (i in schedules) {
-    if ((schedule = schedules[i]).name !== name) { empty = false; continue; }
-    active = schedule.state > STARTING && schedule.state < ENDING;
-    schedule.state = ENDED;
-    schedule.timer.stop();
-    schedule.on.call(active ? "interrupt" : "cancel", node, node.__data__, schedule.index, schedule.group);
-    delete schedules[i];
-  }
-
-  if (empty) delete node.__transition;
-});
-
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/selection/interrupt.js
-
-
-/* harmony default export */ var selection_interrupt = (function(name) {
-  return this.each(function() {
-    interrupt(this, name);
-  });
-});
-
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/transform/decompose.js
-var degrees = 180 / Math.PI;
-
-var identity = {
-  translateX: 0,
-  translateY: 0,
-  rotate: 0,
-  skewX: 0,
-  scaleX: 1,
-  scaleY: 1
-};
-
-/* harmony default export */ var decompose = (function(a, b, c, d, e, f) {
-  var scaleX, scaleY, skewX;
-  if (scaleX = Math.sqrt(a * a + b * b)) a /= scaleX, b /= scaleX;
-  if (skewX = a * c + b * d) c -= a * skewX, d -= b * skewX;
-  if (scaleY = Math.sqrt(c * c + d * d)) c /= scaleY, d /= scaleY, skewX /= scaleY;
-  if (a * d < b * c) a = -a, b = -b, skewX = -skewX, scaleX = -scaleX;
-  return {
-    translateX: e,
-    translateY: f,
-    rotate: Math.atan2(b, a) * degrees,
-    skewX: Math.atan(skewX) * degrees,
-    scaleX: scaleX,
-    scaleY: scaleY
-  };
-});
-
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/transform/parse.js
-
-
-var svgNode;
-
-/* eslint-disable no-undef */
-function parseCss(value) {
-  const m = new (typeof DOMMatrix === "function" ? DOMMatrix : WebKitCSSMatrix)(value + "");
-  return m.isIdentity ? identity : decompose(m.a, m.b, m.c, m.d, m.e, m.f);
-}
-
-function parseSvg(value) {
-  if (value == null) return identity;
-  if (!svgNode) svgNode = document.createElementNS("http://www.w3.org/2000/svg", "g");
-  svgNode.setAttribute("transform", value);
-  if (!(value = svgNode.transform.baseVal.consolidate())) return identity;
-  value = value.matrix;
-  return decompose(value.a, value.b, value.c, value.d, value.e, value.f);
-}
-
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/transform/index.js
-
-
-
-function interpolateTransform(parse, pxComma, pxParen, degParen) {
-
-  function pop(s) {
-    return s.length ? s.pop() + " " : "";
-  }
-
-  function translate(xa, ya, xb, yb, s, q) {
-    if (xa !== xb || ya !== yb) {
-      var i = s.push("translate(", null, pxComma, null, pxParen);
-      q.push({i: i - 4, x: number(xa, xb)}, {i: i - 2, x: number(ya, yb)});
-    } else if (xb || yb) {
-      s.push("translate(" + xb + pxComma + yb + pxParen);
-    }
-  }
-
-  function rotate(a, b, s, q) {
-    if (a !== b) {
-      if (a - b > 180) b += 360; else if (b - a > 180) a += 360; // shortest path
-      q.push({i: s.push(pop(s) + "rotate(", null, degParen) - 2, x: number(a, b)});
-    } else if (b) {
-      s.push(pop(s) + "rotate(" + b + degParen);
-    }
-  }
-
-  function skewX(a, b, s, q) {
-    if (a !== b) {
-      q.push({i: s.push(pop(s) + "skewX(", null, degParen) - 2, x: number(a, b)});
-    } else if (b) {
-      s.push(pop(s) + "skewX(" + b + degParen);
-    }
-  }
-
-  function scale(xa, ya, xb, yb, s, q) {
-    if (xa !== xb || ya !== yb) {
-      var i = s.push(pop(s) + "scale(", null, ",", null, ")");
-      q.push({i: i - 4, x: number(xa, xb)}, {i: i - 2, x: number(ya, yb)});
-    } else if (xb !== 1 || yb !== 1) {
-      s.push(pop(s) + "scale(" + xb + "," + yb + ")");
-    }
-  }
-
-  return function(a, b) {
-    var s = [], // string constants and placeholders
-        q = []; // number interpolators
-    a = parse(a), b = parse(b);
-    translate(a.translateX, a.translateY, b.translateX, b.translateY, s, q);
-    rotate(a.rotate, b.rotate, s, q);
-    skewX(a.skewX, b.skewX, s, q);
-    scale(a.scaleX, a.scaleY, b.scaleX, b.scaleY, s, q);
-    a = b = null; // gc
-    return function(t) {
-      var i = -1, n = q.length, o;
-      while (++i < n) s[(o = q[i]).i] = o.x(t);
-      return s.join("");
-    };
-  };
-}
-
-var interpolateTransformCss = interpolateTransform(parseCss, "px, ", "px)", "deg)");
-var interpolateTransformSvg = interpolateTransform(parseSvg, ", ", ")", ")");
-
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/tween.js
-
-
-function tweenRemove(id, name) {
-  var tween0, tween1;
-  return function() {
-    var schedule = schedule_set(this, id),
-        tween = schedule.tween;
-
-    // If this node shared tween with the previous node,
-    // just assign the updated shared tween and we’re done!
-    // Otherwise, copy-on-write.
-    if (tween !== tween0) {
-      tween1 = tween0 = tween;
-      for (var i = 0, n = tween1.length; i < n; ++i) {
-        if (tween1[i].name === name) {
-          tween1 = tween1.slice();
-          tween1.splice(i, 1);
-          break;
-        }
-      }
-    }
-
-    schedule.tween = tween1;
-  };
-}
-
-function tweenFunction(id, name, value) {
-  var tween0, tween1;
-  if (typeof value !== "function") throw new Error;
-  return function() {
-    var schedule = schedule_set(this, id),
-        tween = schedule.tween;
-
-    // If this node shared tween with the previous node,
-    // just assign the updated shared tween and we’re done!
-    // Otherwise, copy-on-write.
-    if (tween !== tween0) {
-      tween1 = (tween0 = tween).slice();
-      for (var t = {name: name, value: value}, i = 0, n = tween1.length; i < n; ++i) {
-        if (tween1[i].name === name) {
-          tween1[i] = t;
-          break;
-        }
-      }
-      if (i === n) tween1.push(t);
-    }
-
-    schedule.tween = tween1;
-  };
-}
-
-/* harmony default export */ var transition_tween = (function(name, value) {
-  var id = this._id;
-
-  name += "";
-
-  if (arguments.length < 2) {
-    var tween = schedule_get(this.node(), id).tween;
-    for (var i = 0, n = tween.length, t; i < n; ++i) {
-      if ((t = tween[i]).name === name) {
-        return t.value;
-      }
-    }
-    return null;
-  }
-
-  return this.each((value == null ? tweenRemove : tweenFunction)(id, name, value));
-});
-
-function tweenValue(transition, name, value) {
-  var id = transition._id;
-
-  transition.each(function() {
-    var schedule = schedule_set(this, id);
-    (schedule.value || (schedule.value = {}))[name] = value.apply(this, arguments);
-  });
-
-  return function(node) {
-    return schedule_get(node, id).value[name];
-  };
-}
 
 // CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/interpolate.js
 
@@ -7942,753 +8003,6 @@ var active_root = [null];
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3-brush/src/constant.js
-/* harmony default export */ var d3_brush_src_constant = (x => () => x);
-
-// CONCATENATED MODULE: ./node_modules/d3-brush/src/event.js
-function BrushEvent(type, {
-  sourceEvent,
-  target,
-  selection,
-  mode,
-  dispatch
-}) {
-  Object.defineProperties(this, {
-    type: {value: type, enumerable: true, configurable: true},
-    sourceEvent: {value: sourceEvent, enumerable: true, configurable: true},
-    target: {value: target, enumerable: true, configurable: true},
-    selection: {value: selection, enumerable: true, configurable: true},
-    mode: {value: mode, enumerable: true, configurable: true},
-    _: {value: dispatch}
-  });
-}
-
-// CONCATENATED MODULE: ./node_modules/d3-brush/src/noevent.js
-function noevent_nopropagation(event) {
-  event.stopImmediatePropagation();
-}
-
-/* harmony default export */ var src_noevent = (function(event) {
-  event.preventDefault();
-  event.stopImmediatePropagation();
-});
-
-// CONCATENATED MODULE: ./node_modules/d3-brush/src/brush.js
-
-
-
-
-
-
-
-
-
-var MODE_DRAG = {name: "drag"},
-    MODE_SPACE = {name: "space"},
-    MODE_HANDLE = {name: "handle"},
-    MODE_CENTER = {name: "center"};
-
-const {abs, max, min} = Math;
-
-function number1(e) {
-  return [+e[0], +e[1]];
-}
-
-function number2(e) {
-  return [number1(e[0]), number1(e[1])];
-}
-
-var X = {
-  name: "x",
-  handles: ["w", "e"].map(brush_type),
-  input: function(x, e) { return x == null ? null : [[+x[0], e[0][1]], [+x[1], e[1][1]]]; },
-  output: function(xy) { return xy && [xy[0][0], xy[1][0]]; }
-};
-
-var Y = {
-  name: "y",
-  handles: ["n", "s"].map(brush_type),
-  input: function(y, e) { return y == null ? null : [[e[0][0], +y[0]], [e[1][0], +y[1]]]; },
-  output: function(xy) { return xy && [xy[0][1], xy[1][1]]; }
-};
-
-var XY = {
-  name: "xy",
-  handles: ["n", "w", "e", "s", "nw", "ne", "sw", "se"].map(brush_type),
-  input: function(xy) { return xy == null ? null : number2(xy); },
-  output: function(xy) { return xy; }
-};
-
-var cursors = {
-  overlay: "crosshair",
-  selection: "move",
-  n: "ns-resize",
-  e: "ew-resize",
-  s: "ns-resize",
-  w: "ew-resize",
-  nw: "nwse-resize",
-  ne: "nesw-resize",
-  se: "nwse-resize",
-  sw: "nesw-resize"
-};
-
-var flipX = {
-  e: "w",
-  w: "e",
-  nw: "ne",
-  ne: "nw",
-  se: "sw",
-  sw: "se"
-};
-
-var flipY = {
-  n: "s",
-  s: "n",
-  nw: "sw",
-  ne: "se",
-  se: "ne",
-  sw: "nw"
-};
-
-var signsX = {
-  overlay: +1,
-  selection: +1,
-  n: null,
-  e: +1,
-  s: null,
-  w: -1,
-  nw: -1,
-  ne: +1,
-  se: +1,
-  sw: -1
-};
-
-var signsY = {
-  overlay: +1,
-  selection: +1,
-  n: -1,
-  e: null,
-  s: +1,
-  w: null,
-  nw: -1,
-  ne: -1,
-  se: +1,
-  sw: +1
-};
-
-function brush_type(t) {
-  return {type: t};
-}
-
-// Ignore right-click, since that should open the context menu.
-function defaultFilter(event) {
-  return !event.ctrlKey && !event.button;
-}
-
-function defaultExtent() {
-  var svg = this.ownerSVGElement || this;
-  if (svg.hasAttribute("viewBox")) {
-    svg = svg.viewBox.baseVal;
-    return [[svg.x, svg.y], [svg.x + svg.width, svg.y + svg.height]];
-  }
-  return [[0, 0], [svg.width.baseVal.value, svg.height.baseVal.value]];
-}
-
-function defaultTouchable() {
-  return navigator.maxTouchPoints || ("ontouchstart" in this);
-}
-
-// Like d3.local, but with the name “__brush” rather than auto-generated.
-function local(node) {
-  while (!node.__brush) if (!(node = node.parentNode)) return;
-  return node.__brush;
-}
-
-function brush_empty(extent) {
-  return extent[0][0] === extent[1][0]
-      || extent[0][1] === extent[1][1];
-}
-
-function brushSelection(node) {
-  var state = node.__brush;
-  return state ? state.dim.output(state.selection) : null;
-}
-
-function brushX() {
-  return brush_brush(X);
-}
-
-function brushY() {
-  return brush_brush(Y);
-}
-
-/* harmony default export */ var src_brush = (function() {
-  return brush_brush(XY);
-});
-
-function brush_brush(dim) {
-  var extent = defaultExtent,
-      filter = defaultFilter,
-      touchable = defaultTouchable,
-      keys = true,
-      listeners = src_dispatch("start", "brush", "end"),
-      handleSize = 6,
-      touchending;
-
-  function brush(group) {
-    var overlay = group
-        .property("__brush", initialize)
-      .selectAll(".overlay")
-      .data([brush_type("overlay")]);
-
-    overlay.enter().append("rect")
-        .attr("class", "overlay")
-        .attr("pointer-events", "all")
-        .attr("cursor", cursors.overlay)
-      .merge(overlay)
-        .each(function() {
-          var extent = local(this).extent;
-          src_select(this)
-              .attr("x", extent[0][0])
-              .attr("y", extent[0][1])
-              .attr("width", extent[1][0] - extent[0][0])
-              .attr("height", extent[1][1] - extent[0][1]);
-        });
-
-    group.selectAll(".selection")
-      .data([brush_type("selection")])
-      .enter().append("rect")
-        .attr("class", "selection")
-        .attr("cursor", cursors.selection)
-        .attr("fill", "#777")
-        .attr("fill-opacity", 0.3)
-        .attr("stroke", "#fff")
-        .attr("shape-rendering", "crispEdges");
-
-    var handle = group.selectAll(".handle")
-      .data(dim.handles, function(d) { return d.type; });
-
-    handle.exit().remove();
-
-    handle.enter().append("rect")
-        .attr("class", function(d) { return "handle handle--" + d.type; })
-        .attr("cursor", function(d) { return cursors[d.type]; });
-
-    group
-        .each(redraw)
-        .attr("fill", "none")
-        .attr("pointer-events", "all")
-        .on("mousedown.brush", started)
-      .filter(touchable)
-        .on("touchstart.brush", started)
-        .on("touchmove.brush", touchmoved)
-        .on("touchend.brush touchcancel.brush", touchended)
-        .style("touch-action", "none")
-        .style("-webkit-tap-highlight-color", "rgba(0,0,0,0)");
-  }
-
-  brush.move = function(group, selection) {
-    if (group.tween) {
-      group
-          .on("start.brush", function(event) { emitter(this, arguments).beforestart().start(event); })
-          .on("interrupt.brush end.brush", function(event) { emitter(this, arguments).end(event); })
-          .tween("brush", function() {
-            var that = this,
-                state = that.__brush,
-                emit = emitter(that, arguments),
-                selection0 = state.selection,
-                selection1 = dim.input(typeof selection === "function" ? selection.apply(this, arguments) : selection, state.extent),
-                i = src_value(selection0, selection1);
-
-            function tween(t) {
-              state.selection = t === 1 && selection1 === null ? null : i(t);
-              redraw.call(that);
-              emit.brush();
-            }
-
-            return selection0 !== null && selection1 !== null ? tween : tween(1);
-          });
-    } else {
-      group
-          .each(function() {
-            var that = this,
-                args = arguments,
-                state = that.__brush,
-                selection1 = dim.input(typeof selection === "function" ? selection.apply(that, args) : selection, state.extent),
-                emit = emitter(that, args).beforestart();
-
-            interrupt(that);
-            state.selection = selection1 === null ? null : selection1;
-            redraw.call(that);
-            emit.start().brush().end();
-          });
-    }
-  };
-
-  brush.clear = function(group) {
-    brush.move(group, null);
-  };
-
-  function redraw() {
-    var group = src_select(this),
-        selection = local(this).selection;
-
-    if (selection) {
-      group.selectAll(".selection")
-          .style("display", null)
-          .attr("x", selection[0][0])
-          .attr("y", selection[0][1])
-          .attr("width", selection[1][0] - selection[0][0])
-          .attr("height", selection[1][1] - selection[0][1]);
-
-      group.selectAll(".handle")
-          .style("display", null)
-          .attr("x", function(d) { return d.type[d.type.length - 1] === "e" ? selection[1][0] - handleSize / 2 : selection[0][0] - handleSize / 2; })
-          .attr("y", function(d) { return d.type[0] === "s" ? selection[1][1] - handleSize / 2 : selection[0][1] - handleSize / 2; })
-          .attr("width", function(d) { return d.type === "n" || d.type === "s" ? selection[1][0] - selection[0][0] + handleSize : handleSize; })
-          .attr("height", function(d) { return d.type === "e" || d.type === "w" ? selection[1][1] - selection[0][1] + handleSize : handleSize; });
-    }
-
-    else {
-      group.selectAll(".selection,.handle")
-          .style("display", "none")
-          .attr("x", null)
-          .attr("y", null)
-          .attr("width", null)
-          .attr("height", null);
-    }
-  }
-
-  function emitter(that, args, clean) {
-    var emit = that.__brush.emitter;
-    return emit && (!clean || !emit.clean) ? emit : new Emitter(that, args, clean);
-  }
-
-  function Emitter(that, args, clean) {
-    this.that = that;
-    this.args = args;
-    this.state = that.__brush;
-    this.active = 0;
-    this.clean = clean;
-  }
-
-  Emitter.prototype = {
-    beforestart: function() {
-      if (++this.active === 1) this.state.emitter = this, this.starting = true;
-      return this;
-    },
-    start: function(event, mode) {
-      if (this.starting) this.starting = false, this.emit("start", event, mode);
-      else this.emit("brush", event);
-      return this;
-    },
-    brush: function(event, mode) {
-      this.emit("brush", event, mode);
-      return this;
-    },
-    end: function(event, mode) {
-      if (--this.active === 0) delete this.state.emitter, this.emit("end", event, mode);
-      return this;
-    },
-    emit: function(type, event, mode) {
-      var d = src_select(this.that).datum();
-      listeners.call(
-        type,
-        this.that,
-        new BrushEvent(type, {
-          sourceEvent: event,
-          target: brush,
-          selection: dim.output(this.state.selection),
-          mode,
-          dispatch: listeners
-        }),
-        d
-      );
-    }
-  };
-
-  function started(event) {
-    if (touchending && !event.touches) return;
-    if (!filter.apply(this, arguments)) return;
-
-    var that = this,
-        type = event.target.__data__.type,
-        mode = (keys && event.metaKey ? type = "overlay" : type) === "selection" ? MODE_DRAG : (keys && event.altKey ? MODE_CENTER : MODE_HANDLE),
-        signX = dim === Y ? null : signsX[type],
-        signY = dim === X ? null : signsY[type],
-        state = local(that),
-        extent = state.extent,
-        selection = state.selection,
-        W = extent[0][0], w0, w1,
-        N = extent[0][1], n0, n1,
-        E = extent[1][0], e0, e1,
-        S = extent[1][1], s0, s1,
-        dx = 0,
-        dy = 0,
-        moving,
-        shifting = signX && signY && keys && event.shiftKey,
-        lockX,
-        lockY,
-        points = Array.from(event.touches || [event], t => {
-          const i = t.identifier;
-          t = pointer(t, that);
-          t.point0 = t.slice();
-          t.identifier = i;
-          return t;
-        });
-
-    if (type === "overlay") {
-      if (selection) moving = true;
-      const pts = [points[0], points[1] || points[0]];
-      state.selection = selection = [[
-          w0 = dim === Y ? W : min(pts[0][0], pts[1][0]),
-          n0 = dim === X ? N : min(pts[0][1], pts[1][1])
-        ], [
-          e0 = dim === Y ? E : max(pts[0][0], pts[1][0]),
-          s0 = dim === X ? S : max(pts[0][1], pts[1][1])
-        ]];
-      if (points.length > 1) move();
-    } else {
-      w0 = selection[0][0];
-      n0 = selection[0][1];
-      e0 = selection[1][0];
-      s0 = selection[1][1];
-    }
-
-    w1 = w0;
-    n1 = n0;
-    e1 = e0;
-    s1 = s0;
-
-    var group = src_select(that)
-        .attr("pointer-events", "none");
-
-    var overlay = group.selectAll(".overlay")
-        .attr("cursor", cursors[type]);
-
-    interrupt(that);
-    var emit = emitter(that, arguments, true).beforestart();
-
-    if (event.touches) {
-      emit.moved = moved;
-      emit.ended = ended;
-    } else {
-      var view = src_select(event.view)
-          .on("mousemove.brush", moved, true)
-          .on("mouseup.brush", ended, true);
-      if (keys) view
-          .on("keydown.brush", keydowned, true)
-          .on("keyup.brush", keyupped, true)
-
-      nodrag(event.view);
-    }
-
-    redraw.call(that);
-    emit.start(event, mode.name);
-
-    function moved(event) {
-      for (const p of event.changedTouches || [event]) {
-        for (const d of points)
-          if (d.identifier === p.identifier) d.cur = pointer(p, that);
-      }
-      if (shifting && !lockX && !lockY && points.length === 1) {
-        const point = points[0];
-        if (abs(point.cur[0] - point[0]) > abs(point.cur[1] - point[1]))
-          lockY = true;
-        else
-          lockX = true;
-      }
-      for (const point of points)
-        if (point.cur) point[0] = point.cur[0], point[1] = point.cur[1];
-      moving = true;
-      src_noevent(event);
-      move(event);
-    }
-
-    function move(event) {
-      const point = points[0], point0 = point.point0;
-      var t;
-
-      dx = point[0] - point0[0];
-      dy = point[1] - point0[1];
-
-      switch (mode) {
-        case MODE_SPACE:
-        case MODE_DRAG: {
-          if (signX) dx = max(W - w0, min(E - e0, dx)), w1 = w0 + dx, e1 = e0 + dx;
-          if (signY) dy = max(N - n0, min(S - s0, dy)), n1 = n0 + dy, s1 = s0 + dy;
-          break;
-        }
-        case MODE_HANDLE: {
-          if (points[1]) {
-            if (signX) w1 = max(W, min(E, points[0][0])), e1 = max(W, min(E, points[1][0])), signX = 1;
-            if (signY) n1 = max(N, min(S, points[0][1])), s1 = max(N, min(S, points[1][1])), signY = 1;
-          } else {
-            if (signX < 0) dx = max(W - w0, min(E - w0, dx)), w1 = w0 + dx, e1 = e0;
-            else if (signX > 0) dx = max(W - e0, min(E - e0, dx)), w1 = w0, e1 = e0 + dx;
-            if (signY < 0) dy = max(N - n0, min(S - n0, dy)), n1 = n0 + dy, s1 = s0;
-            else if (signY > 0) dy = max(N - s0, min(S - s0, dy)), n1 = n0, s1 = s0 + dy;
-          }
-          break;
-        }
-        case MODE_CENTER: {
-          if (signX) w1 = max(W, min(E, w0 - dx * signX)), e1 = max(W, min(E, e0 + dx * signX));
-          if (signY) n1 = max(N, min(S, n0 - dy * signY)), s1 = max(N, min(S, s0 + dy * signY));
-          break;
-        }
-      }
-
-      if (e1 < w1) {
-        signX *= -1;
-        t = w0, w0 = e0, e0 = t;
-        t = w1, w1 = e1, e1 = t;
-        if (type in flipX) overlay.attr("cursor", cursors[type = flipX[type]]);
-      }
-
-      if (s1 < n1) {
-        signY *= -1;
-        t = n0, n0 = s0, s0 = t;
-        t = n1, n1 = s1, s1 = t;
-        if (type in flipY) overlay.attr("cursor", cursors[type = flipY[type]]);
-      }
-
-      if (state.selection) selection = state.selection; // May be set by brush.move!
-      if (lockX) w1 = selection[0][0], e1 = selection[1][0];
-      if (lockY) n1 = selection[0][1], s1 = selection[1][1];
-
-      if (selection[0][0] !== w1
-          || selection[0][1] !== n1
-          || selection[1][0] !== e1
-          || selection[1][1] !== s1) {
-        state.selection = [[w1, n1], [e1, s1]];
-        redraw.call(that);
-        emit.brush(event, mode.name);
-      }
-    }
-
-    function ended(event) {
-      noevent_nopropagation(event);
-      if (event.touches) {
-        if (event.touches.length) return;
-        if (touchending) clearTimeout(touchending);
-        touchending = setTimeout(function() { touchending = null; }, 500); // Ghost clicks are delayed!
-      } else {
-        yesdrag(event.view, moving);
-        view.on("keydown.brush keyup.brush mousemove.brush mouseup.brush", null);
-      }
-      group.attr("pointer-events", "all");
-      overlay.attr("cursor", cursors.overlay);
-      if (state.selection) selection = state.selection; // May be set by brush.move (on start)!
-      if (brush_empty(selection)) state.selection = null, redraw.call(that);
-      emit.end(event, mode.name);
-    }
-
-    function keydowned(event) {
-      switch (event.keyCode) {
-        case 16: { // SHIFT
-          shifting = signX && signY;
-          break;
-        }
-        case 18: { // ALT
-          if (mode === MODE_HANDLE) {
-            if (signX) e0 = e1 - dx * signX, w0 = w1 + dx * signX;
-            if (signY) s0 = s1 - dy * signY, n0 = n1 + dy * signY;
-            mode = MODE_CENTER;
-            move();
-          }
-          break;
-        }
-        case 32: { // SPACE; takes priority over ALT
-          if (mode === MODE_HANDLE || mode === MODE_CENTER) {
-            if (signX < 0) e0 = e1 - dx; else if (signX > 0) w0 = w1 - dx;
-            if (signY < 0) s0 = s1 - dy; else if (signY > 0) n0 = n1 - dy;
-            mode = MODE_SPACE;
-            overlay.attr("cursor", cursors.selection);
-            move();
-          }
-          break;
-        }
-        default: return;
-      }
-      src_noevent(event);
-    }
-
-    function keyupped(event) {
-      switch (event.keyCode) {
-        case 16: { // SHIFT
-          if (shifting) {
-            lockX = lockY = shifting = false;
-            move();
-          }
-          break;
-        }
-        case 18: { // ALT
-          if (mode === MODE_CENTER) {
-            if (signX < 0) e0 = e1; else if (signX > 0) w0 = w1;
-            if (signY < 0) s0 = s1; else if (signY > 0) n0 = n1;
-            mode = MODE_HANDLE;
-            move();
-          }
-          break;
-        }
-        case 32: { // SPACE
-          if (mode === MODE_SPACE) {
-            if (event.altKey) {
-              if (signX) e0 = e1 - dx * signX, w0 = w1 + dx * signX;
-              if (signY) s0 = s1 - dy * signY, n0 = n1 + dy * signY;
-              mode = MODE_CENTER;
-            } else {
-              if (signX < 0) e0 = e1; else if (signX > 0) w0 = w1;
-              if (signY < 0) s0 = s1; else if (signY > 0) n0 = n1;
-              mode = MODE_HANDLE;
-            }
-            overlay.attr("cursor", cursors[type]);
-            move();
-          }
-          break;
-        }
-        default: return;
-      }
-      src_noevent(event);
-    }
-  }
-
-  function touchmoved(event) {
-    emitter(this, arguments).moved(event);
-  }
-
-  function touchended(event) {
-    emitter(this, arguments).ended(event);
-  }
-
-  function initialize() {
-    var state = this.__brush || {selection: null};
-    state.extent = number2(extent.apply(this, arguments));
-    state.dim = dim;
-    return state;
-  }
-
-  brush.extent = function(_) {
-    return arguments.length ? (extent = typeof _ === "function" ? _ : d3_brush_src_constant(number2(_)), brush) : extent;
-  };
-
-  brush.filter = function(_) {
-    return arguments.length ? (filter = typeof _ === "function" ? _ : d3_brush_src_constant(!!_), brush) : filter;
-  };
-
-  brush.touchable = function(_) {
-    return arguments.length ? (touchable = typeof _ === "function" ? _ : d3_brush_src_constant(!!_), brush) : touchable;
-  };
-
-  brush.handleSize = function(_) {
-    return arguments.length ? (handleSize = +_, brush) : handleSize;
-  };
-
-  brush.keyModifiers = function(_) {
-    return arguments.length ? (keys = !!_, brush) : keys;
-  };
-
-  brush.on = function() {
-    var value = listeners.on.apply(listeners, arguments);
-    return value === listeners ? brush : value;
-  };
-
-  return brush;
-}
-
-// CONCATENATED MODULE: ./node_modules/d3-brush/src/index.js
-
-
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/index.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/zoom.js
-var epsilon2 = 1e-12;
-
-function cosh(x) {
-  return ((x = Math.exp(x)) + 1 / x) / 2;
-}
-
-function sinh(x) {
-  return ((x = Math.exp(x)) - 1 / x) / 2;
-}
-
-function tanh(x) {
-  return ((x = Math.exp(2 * x)) - 1) / (x + 1);
-}
-
-/* harmony default export */ var src_zoom = ((function zoomRho(rho, rho2, rho4) {
-
-  // p0 = [ux0, uy0, w0]
-  // p1 = [ux1, uy1, w1]
-  function zoom(p0, p1) {
-    var ux0 = p0[0], uy0 = p0[1], w0 = p0[2],
-        ux1 = p1[0], uy1 = p1[1], w1 = p1[2],
-        dx = ux1 - ux0,
-        dy = uy1 - uy0,
-        d2 = dx * dx + dy * dy,
-        i,
-        S;
-
-    // Special case for u0 ≅ u1.
-    if (d2 < epsilon2) {
-      S = Math.log(w1 / w0) / rho;
-      i = function(t) {
-        return [
-          ux0 + t * dx,
-          uy0 + t * dy,
-          w0 * Math.exp(rho * t * S)
-        ];
-      }
-    }
-
-    // General case.
-    else {
-      var d1 = Math.sqrt(d2),
-          b0 = (w1 * w1 - w0 * w0 + rho4 * d2) / (2 * w0 * rho2 * d1),
-          b1 = (w1 * w1 - w0 * w0 - rho4 * d2) / (2 * w1 * rho2 * d1),
-          r0 = Math.log(Math.sqrt(b0 * b0 + 1) - b0),
-          r1 = Math.log(Math.sqrt(b1 * b1 + 1) - b1);
-      S = (r1 - r0) / rho;
-      i = function(t) {
-        var s = t * S,
-            coshr0 = cosh(r0),
-            u = w0 / (rho2 * d1) * (coshr0 * tanh(rho * s + r0) - sinh(r0));
-        return [
-          ux0 + u * dx,
-          uy0 + u * dy,
-          w0 * coshr0 / cosh(rho * s + r0)
-        ];
-      }
-    }
-
-    i.duration = S * 1000 * rho / Math.SQRT2;
-
-    return i;
-  }
-
-  zoom.rho = function(_) {
-    var _1 = Math.max(1e-3, +_), _2 = _1 * _1, _4 = _2 * _2;
-    return zoomRho(_1, _2, _4);
-  };
-
-  return zoom;
-})(Math.SQRT2, 2, 4));
-
 // CONCATENATED MODULE: ./node_modules/d3-zoom/src/constant.js
 /* harmony default export */ var d3_zoom_src_constant = (x => () => x);
 
@@ -8762,11 +8076,11 @@ function transform_transform(node) {
 }
 
 // CONCATENATED MODULE: ./node_modules/d3-zoom/src/noevent.js
-function src_noevent_nopropagation(event) {
+function noevent_nopropagation(event) {
   event.stopImmediatePropagation();
 }
 
-/* harmony default export */ var d3_zoom_src_noevent = (function(event) {
+/* harmony default export */ var src_noevent = (function(event) {
   event.preventDefault();
   event.stopImmediatePropagation();
 });
@@ -8784,11 +8098,11 @@ function src_noevent_nopropagation(event) {
 
 // Ignore right-click, since that should open the context menu.
 // except for pinch-to-zoom, which is sent as a wheel+ctrlKey event
-function zoom_defaultFilter(event) {
+function defaultFilter(event) {
   return (!event.ctrlKey || event.type === 'wheel') && !event.button;
 }
 
-function zoom_defaultExtent() {
+function defaultExtent() {
   var e = this;
   if (e instanceof SVGElement) {
     e = e.ownerSVGElement || e;
@@ -8809,7 +8123,7 @@ function defaultWheelDelta(event) {
   return -event.deltaY * (event.deltaMode === 1 ? 0.05 : event.deltaMode ? 1 : 0.002) * (event.ctrlKey ? 10 : 1);
 }
 
-function zoom_defaultTouchable() {
+function defaultTouchable() {
   return navigator.maxTouchPoints || ("ontouchstart" in this);
 }
 
@@ -8825,11 +8139,11 @@ function defaultConstrain(transform, extent, translateExtent) {
 }
 
 /* harmony default export */ var d3_zoom_src_zoom = (function() {
-  var filter = zoom_defaultFilter,
-      extent = zoom_defaultExtent,
+  var filter = defaultFilter,
+      extent = defaultExtent,
       constrain = defaultConstrain,
       wheelDelta = defaultWheelDelta,
-      touchable = zoom_defaultTouchable,
+      touchable = defaultTouchable,
       scaleExtent = [0, Infinity],
       translateExtent = [[-Infinity, -Infinity], [Infinity, Infinity]],
       duration = 250,
@@ -9031,7 +8345,7 @@ function defaultConstrain(transform, extent, translateExtent) {
       g.start();
     }
 
-    d3_zoom_src_noevent(event);
+    src_noevent(event);
     g.wheel = setTimeout(wheelidled, wheelDelay);
     g.zoom("mouse", constrain(translate(scale(t, k), g.mouse[0], g.mouse[1]), g.extent, translateExtent));
 
@@ -9051,13 +8365,13 @@ function defaultConstrain(transform, extent, translateExtent) {
         y0 = event.clientY;
 
     nodrag(event.view);
-    src_noevent_nopropagation(event);
+    noevent_nopropagation(event);
     g.mouse = [p, this.__zoom.invert(p)];
     interrupt(this);
     g.start();
 
     function mousemoved(event) {
-      d3_zoom_src_noevent(event);
+      src_noevent(event);
       if (!g.moved) {
         var dx = event.clientX - x0, dy = event.clientY - y0;
         g.moved = dx * dx + dy * dy > clickDistance2;
@@ -9069,7 +8383,7 @@ function defaultConstrain(transform, extent, translateExtent) {
     function mouseupped(event) {
       v.on("mousemove.zoom mouseup.zoom", null);
       yesdrag(event.view, g.moved);
-      d3_zoom_src_noevent(event);
+      src_noevent(event);
       g.event(event).end();
     }
   }
@@ -9082,7 +8396,7 @@ function defaultConstrain(transform, extent, translateExtent) {
         k1 = t0.k * (event.shiftKey ? 0.5 : 2),
         t1 = constrain(translate(scale(t0, k1), p0, p1), extent.apply(this, args), translateExtent);
 
-    d3_zoom_src_noevent(event);
+    src_noevent(event);
     if (duration > 0) src_select(this).transition().duration(duration).call(schedule, t1, p0, event);
     else src_select(this).call(zoom.transform, t1, p0, event);
   }
@@ -9094,7 +8408,7 @@ function defaultConstrain(transform, extent, translateExtent) {
         g = gesture(this, args, event.changedTouches.length === n).event(event),
         started, i, t, p;
 
-    src_noevent_nopropagation(event);
+    noevent_nopropagation(event);
     for (i = 0; i < n; ++i) {
       t = touches[i], p = pointer(t, this);
       p = [p, this.__zoom.invert(p), t.identifier];
@@ -9117,7 +8431,7 @@ function defaultConstrain(transform, extent, translateExtent) {
         touches = event.changedTouches,
         n = touches.length, i, t, p, l;
 
-    d3_zoom_src_noevent(event);
+    src_noevent(event);
     for (i = 0; i < n; ++i) {
       t = touches[i], p = pointer(t, this);
       if (g.touch0 && g.touch0[2] === t.identifier) g.touch0[0] = p;
@@ -9145,7 +8459,7 @@ function defaultConstrain(transform, extent, translateExtent) {
         touches = event.changedTouches,
         n = touches.length, i, t;
 
-    src_noevent_nopropagation(event);
+    noevent_nopropagation(event);
     if (touchending) clearTimeout(touchending);
     touchending = setTimeout(function() { touchending = null; }, touchDelay);
     for (i = 0; i < n; ++i) {
@@ -9224,43 +8538,11 @@ function defaultConstrain(transform, extent, translateExtent) {
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3/index.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/svgRenderer.vue?vue&type=script&lang=js&
 
 
 
+
 //
 //
 //
@@ -9343,10 +8625,9 @@ function defaultConstrain(transform, extent, translateExtent) {
 //
 //
 
-/*import * as select from 'd3-selection'
-import * as zoom from 'd3-zoom'
-const d3 = Object.assign({}, select, zoom)*/
 
+
+var d3 = Object.assign({}, src_namespaceObject, d3_zoom_src_namespaceObject); // import * as d3 from 'd3'
 
 /* harmony default export */ var svgRenderervue_type_script_lang_js_ = ({
   name: 'svg-renderer',
@@ -9361,13 +8642,18 @@ const d3 = Object.assign({}, select, zoom)*/
     }
   },
   mounted: function mounted() {
-    var svg = src_select("svg");
-    svg.call(d3_zoom_src_zoom().on("zoom", function (event, d) {
-      svg.attr("transform", event.transform);
-      console.log('zoom', event.target, this);
-    }));
+    this.zoom();
   },
   methods: {
+    zoom: function zoom() {
+      var svg = d3.select('svg');
+      var g = svg.selectAll('g');
+      var transform;
+      var zoom = d3.zoom().on('zoom', function (event, d) {
+        g.attr('transform', transform = event.transform);
+      });
+      svg.call(zoom).call(zoom.transform, d3.zoomIdentity).node();
+    },
     getNodeSize: function getNodeSize(node, side) {
       var size = node._size || this.nodeSize;
       if (side) size = node['_' + side] || size;
@@ -10370,7 +9656,7 @@ var es6_typed_uint8_array = __webpack_require__("34ef");
 
 
 
-var d3 = Object.assign({}, d3_force_namespaceObject);
+var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namespaceObject);
 /* harmony default export */ var vue_d3_networkvue_type_script_lang_js_ = ({
   name: 'd3-network',
   components: {
@@ -10641,24 +9927,24 @@ var d3 = Object.assign({}, d3_force_namespaceObject);
     // -- Animation
     simulate: function simulate(nodes, links) {
       var forces = this.forces;
-      var sim = d3.forceSimulation().stop().alpha(0.5) // .alphaMin(0.05)
+      var sim = vue_d3_networkvue_type_script_lang_js_d3.forceSimulation().stop().alpha(0.5) // .alphaMin(0.05)
       .nodes(nodes);
-      if (forces.Center !== false) sim.force('center', d3.forceCenter(this.center.x, this.center.y));
+      if (forces.Center !== false) sim.force('center', vue_d3_networkvue_type_script_lang_js_d3.forceCenter(this.center.x, this.center.y));
 
       if (forces.X !== false) {
-        sim.force('X', d3.forceX(this.center.x).strength(forces.X));
+        sim.force('X', vue_d3_networkvue_type_script_lang_js_d3.forceX(this.center.x).strength(forces.X));
       }
 
       if (forces.Y !== false) {
-        sim.force('Y', d3.forceY(this.center.y).strength(forces.Y));
+        sim.force('Y', vue_d3_networkvue_type_script_lang_js_d3.forceY(this.center.y).strength(forces.Y));
       }
 
       if (forces.ManyBody !== false) {
-        sim.force('charge', d3.forceManyBody().strength(-this.force));
+        sim.force('charge', vue_d3_networkvue_type_script_lang_js_d3.forceManyBody().strength(-this.force));
       }
 
       if (forces.Link !== false) {
-        sim.force('link', d3.forceLink(links).id(function (d) {
+        sim.force('link', vue_d3_networkvue_type_script_lang_js_d3.forceLink(links).id(function (d) {
           return d.id;
         }));
       }
@@ -10684,7 +9970,7 @@ var d3 = Object.assign({}, d3_force_namespaceObject);
       return sim;
     },
     getD3Func: function getD3Func(name) {
-      var func = d3[name];
+      var func = vue_d3_networkvue_type_script_lang_js_d3[name];
       if (func && typeof func === 'function') return func;
       return null;
     },

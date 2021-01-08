@@ -11,7 +11,7 @@
     @touchstart.passive=''
     )
 
-    g(:transform="transform")
+    g#container
       //-> links
       g.links#l-links
           path(v-for="link in links"
@@ -81,10 +81,10 @@
 </template>
 <script>
 import svgExport from '../lib/js/svgExport.js'
-/*import * as select from 'd3-selection'
+import * as select from 'd3-selection'
 import * as zoom from 'd3-zoom'
-const d3 = Object.assign({}, select, zoom)*/
-import * as d3 from 'd3'
+const d3 = Object.assign({}, select, zoom)
+// import * as d3 from 'd3'
 
 export default {
   name: 'svg-renderer',
@@ -115,13 +115,18 @@ export default {
     }
   },
   mounted () {
-    var svg = d3.select("svg")
-    svg.call(d3.zoom().on("zoom", function (event, d) {
-              svg.attr("transform", event.transform)
-              console.log('zoom', event.target, this)
-    }))
+    this.zoom()
   },
   methods: {
+    zoom () {
+      var svg = d3.select('svg')
+      var g = svg.selectAll('g')
+      let transform
+      const zoom = d3.zoom().on('zoom', function (event, d) {
+        g.attr('transform', (transform = event.transform))
+      })
+      svg.call(zoom).call(zoom.transform, d3.zoomIdentity).node()
+    },
     getNodeSize (node, side) {
       let size = node._size || this.nodeSize
       if (side) size = node['_' + side] || size
