@@ -9830,7 +9830,7 @@ var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namesp
       var zoom = vue_d3_networkvue_type_script_lang_js_d3.zoom().on('zoom', function (event, d) {
         g.attr('transform', transform = event.transform);
       });
-      svg.call(zoom);
+      svg.call(zoom).on('dblclick.zoom', null);
     },
     unzoom: function unzoom() {
       var svg = vue_d3_networkvue_type_script_lang_js_d3.select('.net-svg');
@@ -9839,7 +9839,7 @@ var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namesp
       var zoom = vue_d3_networkvue_type_script_lang_js_d3.zoom().on('zoom', function (event, d) {
         g.attr('transform', transform = event.transform);
       });
-      svg.call(zoom).on("mousedown.zoom", null).on("touchstart.zoom", null).on("touchmove.zoom", null).on("touchend.zoom", null);
+      svg.call(zoom).on('mousedown.zoom', null).on('touchstart.zoom', null).on('touchmove.zoom', null).on('touchend.zoom', null);
     },
     updateNodeSvg: function updateNodeSvg() {
       var svg = null;
@@ -10018,7 +10018,6 @@ var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namesp
       }
     },
     dragEnd: function dragEnd() {
-      this.zoom();
       var node = this.nodes[this.dragging];
 
       if (node && !node.pinned) {
@@ -10028,6 +10027,7 @@ var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namesp
       }
 
       this.dragStart(false);
+      this.zoom();
     },
     // -- Render helpers
     nodeClick: function nodeClick(event, node) {

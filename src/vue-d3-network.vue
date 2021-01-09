@@ -202,8 +202,7 @@ export default {
       const zoom = d3.zoom().on('zoom', function (event, d) {
         g.attr('transform', (transform = event.transform))
       })
-      svg.call(zoom)
-
+      svg.call(zoom).on('dblclick.zoom', null)
     },
     unzoom () {
       var svg = d3.select('.net-svg')
@@ -213,10 +212,10 @@ export default {
         g.attr('transform', (transform = event.transform))
       })
       svg.call(zoom)
-        .on("mousedown.zoom", null)
-        .on("touchstart.zoom", null)
-        .on("touchmove.zoom", null)
-        .on("touchend.zoom", null);
+        .on('mousedown.zoom', null)
+        .on('touchstart.zoom', null)
+        .on('touchmove.zoom', null)
+        .on('touchend.zoom', null)
     },
     updateNodeSvg () {
       let svg = null
@@ -376,7 +375,6 @@ export default {
       }
     },
     dragEnd () {
-      this.zoom()
       let node = this.nodes[this.dragging]
       if (node && !node.pinned) {
         // unfix node position
@@ -384,6 +382,7 @@ export default {
         node.fy = null
       }
       this.dragStart(false)
+      this.zoom()
     },
     // -- Render helpers
     nodeClick (event, node) {
