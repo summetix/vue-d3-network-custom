@@ -24,8 +24,6 @@
           :class='linkClass(link.id)'
           :style='linkStyle(link)'
           )
-          text.hover-link-label(:font-size="fontSize" )
-            textPath(v-bind:xlink:href="'#' + link.id" startOffset= "50%") {{ link.name }}
 
     //- -> nodes
     g.nodes#l-nodes(v-if='!noNodes')
@@ -36,7 +34,6 @@
           :width='getNodeSize(node, "width")'
           :height='getNodeSize(node, "height")'
           @click='emit("nodeClick",[$event,node])'
-          @mouseover='emit("nodeOver",[$event,node])'
           @touchend.passive='emit("nodeClick",[$event,node])'
           @mousedown.prevent='emit("dragStart",[$event,key])'
           @touchstart.prevent='emit("dragStart",[$event,key])'
