@@ -24,6 +24,7 @@
           :class='linkClass(link.id)'
           :style='linkStyle(link)'
           )
+        textPath(class='hoverlabel' v-bind:xlink:href="'#' + link.id" startOffset= "50%") {{ link.name }}
 
     //- -> nodes
     g.nodes#l-nodes(v-if='!noNodes')
