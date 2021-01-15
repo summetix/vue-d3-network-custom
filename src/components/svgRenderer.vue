@@ -18,8 +18,8 @@
           :id="link.id"
           @click='emit("linkClick",[$event,link])'
           @touchstart.passive='emit("linkClick",[$event,link])'
-          @mouseenter='emit("linkEnter",[$event,link])'
-          @mouseleave='emit("linkLeave",[$event,link])'
+          @mouseover='emit("linkEnter",[$event,link])'
+          @mouseout='emit("linkLeave",[$event,link])'
           v-bind='linkAttrs(link)'
           :class='linkClass(link.id)'
           :style='linkStyle(link)'
