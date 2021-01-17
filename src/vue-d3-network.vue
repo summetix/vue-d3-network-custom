@@ -397,12 +397,6 @@ export default {
     linkLeave (event, link) {
       this.$emit('link-mouseleave', event, link)
     },
-    linkOver (event, link) {
-      this.$emit('link-mouseover', event, link)
-    },
-    linkOut (event, link) {
-      this.$emit('link-mouseout', event, link)
-    },
     setMouseOffset (event, node) {
       let x = 0
       let y = 0
