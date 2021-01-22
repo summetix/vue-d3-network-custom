@@ -64,8 +64,12 @@
 
     //-> Links Labels
     g.labels#link-labels(v-if='linkLabels')
-      text.link-label(v-for="link in links" :font-size="fontSize" )
-        textPath(v-bind:xlink:href="'#' + link.id" startOffset= "50%") {{ link.name }}
+      text.link-label(v-for="link in links" 
+        :font-size="fontSize" 
+        :x='(link.source.x + link.target.x) / 2 + (fontSize / 2)'
+        :y='(link.source.y + link.target.y) / 2 + (fontSize / 2)'
+      ) {{ link.name }}
+        
 
     //- -> Node Labels
     g.labels#node-labels( v-if="nodeLabels")
@@ -79,10 +83,6 @@
 </template>
 <script>
 import svgExport from '../lib/js/svgExport.js'
-import * as select from 'd3-selection'
-import * as zoom from 'd3-zoom'
-const d3 = Object.assign({}, select, zoom)
-// import * as d3 from 'd3'
 
 export default {
   name: 'svg-renderer',

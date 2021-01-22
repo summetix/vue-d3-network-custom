@@ -8242,12 +8242,12 @@ function defaultConstrain(transform, extent, translateExtent) {
 
 
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"42b602fa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/svgRenderer.vue?vue&type=template&id=27e1b071&lang=pug&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{ref:"svg",staticClass:"net-svg",attrs:{"xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink","width":_vm.size.w,"height":_vm.size.h},on:{"mouseup":function($event){_vm.emit("dragEnd",[$event])},"&touchend":function($event){_vm.emit("dragEnd",[$event])},"&touchstart":function($event){}}},[_c('g',{staticClass:"links",attrs:{"id":"l-links"}},_vm._l((_vm.links),function(link){return _c('path',_vm._b({class:_vm.linkClass(link.id),style:(_vm.linkStyle(link)),attrs:{"d":_vm.linkPath(link),"id":link.id},on:{"click":function($event){_vm.emit("linkClick",[$event,link])},"&touchstart":function($event){_vm.emit("linkClick",[$event,link])},"mouseenter":function($event){_vm.emit("linkEnter",[$event,link])},"mouseleave":function($event){_vm.emit("linkLeave",[$event,link])}}},'path',_vm.linkAttrs(link),false))})),(!_vm.noNodes)?_c('g',{staticClass:"nodes",attrs:{"id":"l-nodes"}},[_vm._l((_vm.nodes),function(node,key){return [(_vm.svgIcon(node))?_c('svg',_vm._b({key:key,class:_vm.nodeClass(node,["node-svg"]),style:(_vm.nodeStyle(node)),attrs:{"viewBox":_vm.svgIcon(node).attrs.viewBox,"width":_vm.getNodeSize(node, "width"),"height":_vm.getNodeSize(node, "height"),"x":node.x - _vm.getNodeSize(node, "width") / 2,"y":node.y - _vm.getNodeSize(node, "height") / 2,"title":node.name},domProps:{"innerHTML":_vm._s(_vm.svgIcon(node).data)},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'svg',node._svgAttrs,false)):_c('circle',_vm._b({key:key,class:_vm.nodeClass(node),style:(_vm.nodeStyle(node)),attrs:{"r":_vm.getNodeSize(node) / 2,"cx":node.x,"cy":node.y,"title":node.name},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'circle',node._svgAttrs,false))]})],2):_vm._e(),(_vm.linkLabels)?_c('g',{staticClass:"labels",attrs:{"id":"link-labels"}},_vm._l((_vm.links),function(link){return _c('text',{staticClass:"link-label",attrs:{"font-size":_vm.fontSize}},[_c('textPath',{attrs:{"xlink:href":'#' + link.id,"startOffset":"50%"}},[_vm._v(_vm._s(link.name))])])})):_vm._e(),(_vm.nodeLabels)?_c('g',{staticClass:"labels",attrs:{"id":"node-labels"}},_vm._l((_vm.nodes),function(node){return _c('text',{staticClass:"node-label",class:(node._labelClass) ? node._labelClass : "",attrs:{"x":node.x + (_vm.getNodeSize(node) / 2) + (_vm.fontSize / 2),"y":node.y + _vm.labelOffset.y,"font-size":_vm.fontSize,"stroke-width":_vm.fontSize / 8}},[_vm._v(_vm._s(node.name))])})):_vm._e()])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"42b602fa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/svgRenderer.vue?vue&type=template&id=414abf02&lang=pug&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{ref:"svg",staticClass:"net-svg",attrs:{"xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink","width":_vm.size.w,"height":_vm.size.h},on:{"mouseup":function($event){_vm.emit("dragEnd",[$event])},"&touchend":function($event){_vm.emit("dragEnd",[$event])},"&touchstart":function($event){}}},[_c('g',{staticClass:"links",attrs:{"id":"l-links"}},_vm._l((_vm.links),function(link){return _c('path',_vm._b({class:_vm.linkClass(link.id),style:(_vm.linkStyle(link)),attrs:{"d":_vm.linkPath(link),"id":link.id},on:{"click":function($event){_vm.emit("linkClick",[$event,link])},"&touchstart":function($event){_vm.emit("linkClick",[$event,link])},"mouseenter":function($event){_vm.emit("linkEnter",[$event,link])},"mouseleave":function($event){_vm.emit("linkLeave",[$event,link])}}},'path',_vm.linkAttrs(link),false))})),(!_vm.noNodes)?_c('g',{staticClass:"nodes",attrs:{"id":"l-nodes"}},[_vm._l((_vm.nodes),function(node,key){return [(_vm.svgIcon(node))?_c('svg',_vm._b({key:key,class:_vm.nodeClass(node,["node-svg"]),style:(_vm.nodeStyle(node)),attrs:{"viewBox":_vm.svgIcon(node).attrs.viewBox,"width":_vm.getNodeSize(node, "width"),"height":_vm.getNodeSize(node, "height"),"x":node.x - _vm.getNodeSize(node, "width") / 2,"y":node.y - _vm.getNodeSize(node, "height") / 2,"title":node.name},domProps:{"innerHTML":_vm._s(_vm.svgIcon(node).data)},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'svg',node._svgAttrs,false)):_c('circle',_vm._b({key:key,class:_vm.nodeClass(node),style:(_vm.nodeStyle(node)),attrs:{"r":_vm.getNodeSize(node) / 2,"cx":node.x,"cy":node.y,"title":node.name},on:{"click":function($event){_vm.emit("nodeClick",[$event,node])},"&touchend":function($event){_vm.emit("nodeClick",[$event,node])},"mousedown":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])},"touchstart":function($event){$event.preventDefault();_vm.emit("dragStart",[$event,key])}}},'circle',node._svgAttrs,false))]})],2):_vm._e(),(_vm.linkLabels)?_c('g',{staticClass:"labels",attrs:{"id":"link-labels"}},_vm._l((_vm.links),function(link){return _c('text',{staticClass:"link-label",attrs:{"font-size":_vm.fontSize,"x":(link.source.x + link.target.x) / 2 + (_vm.fontSize / 2),"y":(link.source.y + link.target.y) / 2 + (_vm.fontSize / 2)}},[_vm._v(_vm._s(link.name))])})):_vm._e(),(_vm.nodeLabels)?_c('g',{staticClass:"labels",attrs:{"id":"node-labels"}},_vm._l((_vm.nodes),function(node){return _c('text',{staticClass:"node-label",class:(node._labelClass) ? node._labelClass : "",attrs:{"x":node.x + (_vm.getNodeSize(node) / 2) + (_vm.fontSize / 2),"y":node.y + _vm.labelOffset.y,"font-size":_vm.fontSize,"stroke-width":_vm.fontSize / 8}},[_vm._v(_vm._s(node.name))])})):_vm._e()])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/svgRenderer.vue?vue&type=template&id=27e1b071&lang=pug&
+// CONCATENATED MODULE: ./src/components/svgRenderer.vue?vue&type=template&id=414abf02&lang=pug&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.regexp.replace.js
 var es6_regexp_replace = __webpack_require__("a481");
@@ -8533,7 +8533,6 @@ var es7_object_values = __webpack_require__("8615");
 
 
 
-
 //
 //
 //
@@ -8613,10 +8612,10 @@ var es7_object_values = __webpack_require__("8615");
 //
 //
 //
-
-
-
-var d3 = Object.assign({}, src_namespaceObject, d3_zoom_src_namespaceObject); // import * as d3 from 'd3'
+//
+//
+//
+//
 
 /* harmony default export */ var svgRenderervue_type_script_lang_js_ = ({
   name: 'svg-renderer',
@@ -9635,7 +9634,7 @@ var es6_typed_uint8_array = __webpack_require__("34ef");
 
 
 
-var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namespaceObject, src_namespaceObject, d3_zoom_src_namespaceObject);
+var d3 = Object.assign({}, d3_force_namespaceObject, src_namespaceObject, d3_zoom_src_namespaceObject);
 /* harmony default export */ var vue_d3_networkvue_type_script_lang_js_ = ({
   name: 'd3-network',
   components: {
@@ -9823,19 +9822,19 @@ var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namesp
   },
   methods: {
     zoom: function zoom() {
-      var svg = vue_d3_networkvue_type_script_lang_js_d3.select('.net-svg');
+      var svg = d3.select('.net-svg');
       var g = svg.selectAll('g');
       var transform;
-      var zoom = vue_d3_networkvue_type_script_lang_js_d3.zoom().on('zoom', function (event, d) {
+      var zoom = d3.zoom().on('zoom', function (event, d) {
         g.attr('transform', transform = event.transform);
       });
       svg.call(zoom).on('dblclick.zoom', null);
     },
     unzoom: function unzoom() {
-      var svg = vue_d3_networkvue_type_script_lang_js_d3.select('.net-svg');
+      var svg = d3.select('.net-svg');
       var g = svg.selectAll('g');
       var transform;
-      var zoom = vue_d3_networkvue_type_script_lang_js_d3.zoom().on('zoom', function (event, d) {
+      var zoom = d3.zoom().on('zoom', function (event, d) {
         g.attr('transform', transform = event.transform);
       });
       svg.call(zoom).on('mousedown.zoom', null).on('touchstart.zoom', null).on('touchmove.zoom', null).on('touchend.zoom', null);
@@ -9925,24 +9924,24 @@ var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namesp
     // -- Animation
     simulate: function simulate(nodes, links) {
       var forces = this.forces;
-      var sim = vue_d3_networkvue_type_script_lang_js_d3.forceSimulation().stop().alpha(0.5) // .alphaMin(0.05)
+      var sim = d3.forceSimulation().stop().alpha(0.5) // .alphaMin(0.05)
       .nodes(nodes);
-      if (forces.Center !== false) sim.force('center', vue_d3_networkvue_type_script_lang_js_d3.forceCenter(this.center.x, this.center.y));
+      if (forces.Center !== false) sim.force('center', d3.forceCenter(this.center.x, this.center.y));
 
       if (forces.X !== false) {
-        sim.force('X', vue_d3_networkvue_type_script_lang_js_d3.forceX(this.center.x).strength(forces.X));
+        sim.force('X', d3.forceX(this.center.x).strength(forces.X));
       }
 
       if (forces.Y !== false) {
-        sim.force('Y', vue_d3_networkvue_type_script_lang_js_d3.forceY(this.center.y).strength(forces.Y));
+        sim.force('Y', d3.forceY(this.center.y).strength(forces.Y));
       }
 
       if (forces.ManyBody !== false) {
-        sim.force('charge', vue_d3_networkvue_type_script_lang_js_d3.forceManyBody().strength(-this.force));
+        sim.force('charge', d3.forceManyBody().strength(-this.force));
       }
 
       if (forces.Link !== false) {
-        sim.force('link', vue_d3_networkvue_type_script_lang_js_d3.forceLink(links).id(function (d) {
+        sim.force('link', d3.forceLink(links).id(function (d) {
           return d.id;
         }));
       }
@@ -9968,7 +9967,7 @@ var vue_d3_networkvue_type_script_lang_js_d3 = Object.assign({}, d3_force_namesp
       return sim;
     },
     getD3Func: function getD3Func(name) {
-      var func = vue_d3_networkvue_type_script_lang_js_d3[name];
+      var func = d3[name];
       if (func && typeof func === 'function') return func;
       return null;
     },
