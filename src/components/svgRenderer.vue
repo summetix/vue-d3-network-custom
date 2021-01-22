@@ -34,7 +34,6 @@
           :width='getNodeSize(node, "width")'
           :height='getNodeSize(node, "height")'
           @click='emit("nodeClick",[$event,node])'
-          @mouseover='emit("nodeOver",[$event,node])'
           @touchend.passive='emit("nodeClick",[$event,node])'
           @mousedown.prevent='emit("dragStart",[$event,key])'
           @touchstart.prevent='emit("dragStart",[$event,key])'
