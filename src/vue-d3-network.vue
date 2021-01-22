@@ -198,18 +198,16 @@ export default {
     zoom () {
       var svg = d3.select('.net-svg')
       var g = svg.selectAll('g')
-      let transform
       const zoom = d3.zoom().on('zoom', function (event, d) {
-        g.attr('transform', (transform = event.transform))
+        g.attr('transform', event.transform)
       })
       svg.call(zoom).on('dblclick.zoom', null)
     },
     unzoom () {
       var svg = d3.select('.net-svg')
       var g = svg.selectAll('g')
-      let transform
       const zoom = d3.zoom().on('zoom', function (event, d) {
-        g.attr('transform', (transform = event.transform))
+        g.attr('transform', event.transform)
       })
       svg.call(zoom)
         .on('mousedown.zoom', null)
@@ -387,6 +385,9 @@ export default {
     // -- Render helpers
     nodeClick (event, node) {
       this.$emit('node-click', event, node)
+    },
+    nodeOver (event, node) {
+      this.$emit('node-over', event, node)
     },
     linkClick (event, link) {
       this.$emit('link-click', event, link)

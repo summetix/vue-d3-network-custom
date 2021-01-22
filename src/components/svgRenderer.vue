@@ -34,6 +34,7 @@
           :width='getNodeSize(node, "width")'
           :height='getNodeSize(node, "height")'
           @click='emit("nodeClick",[$event,node])'
+          @mouseover='emit("nodeOver",[$event,node])'
           @touchend.passive='emit("nodeClick",[$event,node])'
           @mousedown.prevent='emit("dragStart",[$event,key])'
           @touchstart.prevent='emit("dragStart",[$event,key])'
@@ -64,12 +65,11 @@
 
     //-> Links Labels
     g.labels#link-labels(v-if='linkLabels')
-      text.link-label(v-for="link in links" 
-        :font-size="fontSize" 
+      text.link-label(v-for="link in links"
+        :font-size="fontSize"
         :x='(link.source.x + link.target.x) / 2 + (fontSize / 2)'
         :y='(link.source.y + link.target.y) / 2 + (fontSize / 2)'
       ) {{ link.name }}
-        
 
     //- -> Node Labels
     g.labels#node-labels( v-if="nodeLabels")
