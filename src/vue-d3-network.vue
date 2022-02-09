@@ -196,7 +196,7 @@ export default {
   },
   methods: {
     zoom () {
-      var svg = d3.select('.net-svg')
+      var svg = d3.selectAll('.net-svg')
       var g = svg.selectAll('g')
       const zoom = d3.zoom().on('zoom', function (event, d) {
         g.attr('transform', event.transform)
@@ -204,7 +204,7 @@ export default {
       svg.call(zoom).on('dblclick.zoom', null)
     },
     unzoom () {
-      var svg = d3.select('.net-svg')
+      var svg = d3.selectAll('.net-svg')
       var g = svg.selectAll('g')
       const zoom = d3.zoom().on('zoom', function (event, d) {
         g.attr('transform', event.transform)
