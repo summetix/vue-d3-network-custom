@@ -201,7 +201,7 @@ export default {
       const zoom = d3.zoom().on('zoom', function (event, d) {
         g.attr('transform', event.transform)
       })
-      // svg.call(zoom).on('dblclick.zoom', null)
+      svg.call(zoom).on('dblclick.zoom', null)
     },
     unzoom () {
       var svg = d3.selectAll('.net-svg')
