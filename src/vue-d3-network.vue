@@ -200,10 +200,9 @@ export default {
   },
   methods: {
     zoom () {
-      console.log(this.id)
       var container, svg
       if(this.id) {
-        container = d3.select(this.id)
+        container = d3.select(`#${this.id}`)
         svg = container.selectAll('.net-svg')   
       } else {
         svg = d3.selectAll('.net-svg')
@@ -216,10 +215,9 @@ export default {
       svg.call(zoom).on('dblclick.zoom', null)
     },
     unzoom () {
-      console.log(this.id)
       var container, svg
       if(this.id) {
-        container = d3.select(this.id)
+        container = d3.select(`#${this.id}`)
         svg = container.select('.net-svg')   
       } else {
         svg = d3.selectAll('.net-svg')
