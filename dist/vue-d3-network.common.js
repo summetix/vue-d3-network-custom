@@ -11469,7 +11469,8 @@ var d3 = Object.assign({}, d3_force_namespaceObject, src_namespaceObject, d3_zoo
     }
   },
   methods: {
-    zoom: function zoom() {
+    zoom: function zoom(event) {
+      console.log(event);
       var svg = d3.selectAll('.net-svg');
       var g = svg.selectAll('g');
       var zoom = d3.zoom().on('zoom', function (event, d) {
@@ -11477,7 +11478,8 @@ var d3 = Object.assign({}, d3_force_namespaceObject, src_namespaceObject, d3_zoo
       });
       svg.call(zoom).on('dblclick.zoom', null);
     },
-    unzoom: function unzoom() {
+    unzoom: function unzoom(event) {
+      console.log(event);
       var svg = d3.selectAll('.net-svg');
       var g = svg.selectAll('g');
       var zoom = d3.zoom().on('zoom', function (event, d) {
