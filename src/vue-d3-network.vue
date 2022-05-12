@@ -131,8 +131,9 @@ export default {
       props.canvasStyles = this.options.canvasStyles
     }
 
+    var containerAttrs = this.id ? {class: 'net', id: this.id } : {class: 'net' }
     return createElement('div', {
-      attrs: { class: 'net' },
+      attrs: containerAttrs,
       on: { 'mousemove': this.move, '&touchmove': this.move }
     }, [createElement(renderer, {
       props, ref, on: { action: this.methodCall }

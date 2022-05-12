@@ -11401,10 +11401,14 @@ var d3 = Object.assign({}, d3_force_namespaceObject, src_namespaceObject, d3_zoo
       props.canvasStyles = this.options.canvasStyles;
     }
 
+    var containerAttrs = this.id ? {
+      class: 'net',
+      id: this.id
+    } : {
+      class: 'net'
+    };
     return createElement('div', {
-      attrs: {
-        class: 'net'
-      },
+      attrs: containerAttrs,
       on: {
         'mousemove': this.move,
         '&touchmove': this.move
