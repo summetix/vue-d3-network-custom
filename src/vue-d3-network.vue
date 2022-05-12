@@ -47,6 +47,9 @@ export default {
           links: {}
         }
       }
+    },
+    id: {
+      type: String
     }
   },
   data () {
@@ -195,18 +198,32 @@ export default {
     }
   },
   methods: {
-    zoom (event) {
-      console.log(event)
-      var svg = d3.selectAll('.net-svg')
+    zoom () {
+      console.log(this.id)
+      var container, svg
+      if(this.id) {
+        container = d3.select(this.id)
+        svg = container.selectAll('.net-svg')   
+      } else {
+        svg = d3.selectAll('.net-svg')
+      }
+      
       var g = svg.selectAll('g')
       const zoom = d3.zoom().on('zoom', function (event, d) {
         g.attr('transform', event.transform)
       })
       svg.call(zoom).on('dblclick.zoom', null)
     },
-    unzoom (event) {
-      console.log(event)
-      var svg = d3.selectAll('.net-svg')
+    unzoom () {
+      console.log(this.id)
+      var container, svg
+      if(this.id) {
+        container = d3.select(this.id)
+        svg = container.select('.net-svg')   
+      } else {
+        svg = d3.selectAll('.net-svg')
+      }
+
       var g = svg.selectAll('g')
       const zoom = d3.zoom().on('zoom', function (event, d) {
         g.attr('transform', event.transform)
